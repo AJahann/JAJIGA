@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAJIGA</title>
+    <meta name="theme-color" content="#cc0001">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="static/style/style.css" />
+    <link rel="stylesheet" href="static/style/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="nav-wrapper-items-right">
+            <div class="profile">
+              <div class="profile-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon_menu"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    d="M 6 9 A 2.0002 2.0002 0 1 0 6 13 L 42 13 A 2.0002 2.0002 0 1 0 42 9 L 6 9 z M 6 22 A 2.0002 2.0002 0 1 0 6 26 L 42 26 A 2.0002 2.0002 0 1 0 42 22 L 6 22 z M 6 35 A 2.0002 2.0002 0 1 0 6 39 L 42 39 A 2.0002 2.0002 0 1 0 42 35 L 6 35 z"
+                  ></path>
+                </svg>
+
+                <div class="profile-person">
+                  <svg
+                    class=""
+                    fill="#d6d6d6"
+                    viewBox="0 0 32 32"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <defs>
+                      <clipPath id="clip-path">
+                        <polygon
+                          points="0 0 32 0 32 1.23 32 32 0 32 0 0"
+                          style="fill: none"
+                        ></polygon>
+                      </clipPath>
+                    </defs>
+                    <g style="clip-path: url(#clip-path)">
+                      <path
+                        d="M16,32A16,16,0,1,1,32,16,16,16,0,0,1,16,32ZM16,1.52A14.48,14.48,0,0,0,1.52,16a14.82,14.82,0,0,0,.28,2.82,14.48,14.48,0,0,0,28.4,0A15,15,0,0,0,30.48,16,14.5,14.5,0,0,0,16,1.52Z"
+                      ></path>
+                      <path
+                        d="M20.5,13.5A4.5,4.5,0,1,1,16,9,4.49,4.49,0,0,1,20.5,13.5ZM19,18.71a6,6,0,1,0-5.94,0A9.76,9.76,0,0,0,6.25,28a.75.75,0,0,0,1.5,0,8.25,8.25,0,0,1,15.87-3.16h0A8.18,8.18,0,0,1,24.25,28a.75.75,0,0,0,1.5,0A9.76,9.76,0,0,0,19,18.71Z"
+                        style="fill-rule: evenodd"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="nav-menu">
+              <ul class="nav-menu_items">
+                <li class="nav_item"><a href="/">علاقه‌مندی‌ها</a></li>
+                <li class="nav_item"><a href="/">میزبان شوید</a></li>
+                <li class="nav_item login-signUp">
+                  <a href="/">ورود / ثبت‌نام</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-scrolled-items">
+            <div id="nav_support_btn" class="nav-support-btn">
+              <a aria-label="پشتیبانی" draggable="false" href="/support"
+                ><svg class="" fill="none" viewBox="0 0 24 24">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19 17H18C17.448 17 17 16.552 17 16V11C17 10.448 17.448 10 18 10H19C20.105 10 21 10.895 21 12V15C21 16.105 20.105 17 19 17Z"
+                    fill="#F0C807"
+                    stroke="#323232"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6 17H5C3.895 17 3 16.105 3 15V12C3 10.895 3.895 10 5 10H6C6.552 10 7 10.448 7 11V16C7 16.552 6.552 17 6 17Z"
+                    fill="#F0C807"
+                    stroke="#323232"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M18.5 10V9.5C18.5 5.91 15.59 3 12 3V3C8.41 3 5.5 5.91 5.5 9.5V10"
+                    stroke="#323232"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.625 21.25H11.375C10.685 21.25 10.125 20.69 10.125 20C10.125 19.31 10.685 18.75 11.375 18.75H12.625C13.315 18.75 13.875 19.31 13.875 20C13.875 20.69 13.315 21.25 12.625 21.25Z"
+                    fill="#F0C807"
+                    stroke="#323232"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M13.875 20H16C17.105 20 18 19.105 18 18V17"
+                    stroke="#323232"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path></svg
+              ></a>
+            </div>
+
+            <div class="header_searchBox nav-searchBox">
+              <input
+                class="searchBox-input"
+                type="text"
+                name="searchBox"
+                placeholder="میخوای کجا بری؟"
+                id=""
+              />
+              <div class="searchBox-btn">
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="modal-search">
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+          <div class="loges">
+            <a class="logo" draggable="false" href="/">
+              <svg
+                class="logo"
+                fill="currentColor"
+                viewBox="0 0 1578.85999 500"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <defs>
+                  <linearGradient
+                    id="bg"
+                    x1="250"
+                    y1="502"
+                    x2="250"
+                    y2="2"
+                    gradientTransform="matrix(1 0 0 -1 0 502)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#cc0001"></stop>
+                    <stop offset="1" stop-color="#840000"></stop>
+                  </linearGradient>
+                </defs>
+                <path
+                  id="text"
+                  fill="#fff"
+                  d="M698.719 151.325v124.202a83.61836 83.61836 0 0 1-3.934 26.273 53.17238 53.17238 0 0 1-12.364 20.653q-8.43 8.71349-21.778 13.628-13.35 4.92-32.174 4.918H564.12v-33.158h62.382q11.23654 0 18.687-2.529a31.37366 31.37366 0 0 0 11.943-6.884 23.87039 23.87039 0 0 0 6.322-10.397 43.98961 43.98961 0 0 0 1.827-12.785V151.325zM747.423 341h-36.53l66.597-168.6q5.33551-13.488 15.033-18.967 9.69452-5.4795 24.869-5.479 14.8905 0 24.587 5.479 9.696 5.4795 14.753 18.967L920.801 341h-36.812l-57.604-152.583q-2.53052-6.46051-9.273-6.463-6.744 0-9.555 6.463zM1070.605 151.325v124.202a83.62016 83.62016 0 0 1-3.934 26.273 53.18417 53.18417 0 0 1-12.364 20.653q-8.43 8.71349-21.778 13.628-13.34848 4.92-32.174 4.918h-64.35v-33.158h62.383q11.235 0 18.686-2.529a31.36664 31.36664 0 0 0 11.943-6.884 23.87039 23.87039 0 0 0 6.322-10.397 43.95633 43.95633 0 0 0 1.826-12.785V151.325zM1137.879 151.325V341h-33.158V151.325zM1335.47705 151.325v33.158h-78.11694q-27.54309 0-40.043 14.472-12.507 14.475-12.505 47.349 0 32.601 12.364 47.068 12.36145 14.475 40.184 14.471h31.47095q14.04748 0 20.23205-7.446 6.17853-7.443 6.182-19.249 0-11.51848-5.76-17.843-5.76306-6.324-17.563-6.323h-42.15V228.04h45.522q25.56592 0 37.93506 14.471 12.36145 14.4765 12.364 39.2a80.71611 80.71611 0 0 1-3.231 23.183 48.781 48.781 0 0 1-10.396 18.827 49.82884 49.82884 0 0 1-18.266 12.645q-11.103 4.638-27.11694 4.637h-29.223q-41.592 0-63.646-23.463-22.06348-23.46149-22.059-71.234 0-48.051 22.059-71.515 22.0545-23.46 63.646-23.463h78.11682zM1405.483 341h-36.53l66.598-168.6q5.334-13.488 15.033-18.967 9.69452-5.4795 24.868-5.479 14.8905 0 24.587 5.479 9.696 5.4795 14.754 18.967L1578.86 341h-36.812l-57.604-152.583q-2.53052-6.46051-9.272-6.463-6.744 0-9.55505 6.463z"
+                ></path>
+                <path
+                  d="M500 400a99.99932 99.99932 0 0 1-100 100H100A99.99933 99.99933 0 0 1 0 400V100A99.99933 99.99933 0 0 1 100 0h300a99.99933 99.99933 0 0 1 100 100z"
+                  fill="url(#bg)"
+                ></path>
+                <path
+                  d="M500 400a99.99932 99.99932 0 0 1-100 100h-88L69.756 255.392 231 152l90 14 92.634-16.041L500 238z"
+                  opacity="0.2"
+                ></path>
+                <path
+                  d="M427.973 283.845a106.739 106.739 0 0 0-5.154-16.2 113.03028 113.03028 0 0 0-21.516-33.949c-1.787-1.996-22.475-22.174-26.191-25.784a.69841.69841 0 0 0-.564-.265.60181.60181 0 0 0-.535.237c-.003-.001-46.729 46.974-46.742 46.987l-.002.002a.69.69 0 0 0-.201.498.76444.76444 0 0 0 .293.617l18.802 18.519s5.41 5.249 7.602 8.084a44.9073 44.9073 0 1 1-80.361 27.571 45.81966 45.81966 0 0 1 10.171-28.735l130.49-130.08a.82321.82321 0 0 0 .296-.619.78123.78123 0 0 0-.725-.769l-93.81.112-72.823-72.706H247a.90822.90822 0 0 0-.557-.227.84071.84071 0 0 0-.533.205l-.004-.001S69.194 254.101 69.208 254.115a.6029.6029 0 0 0-.206.503.782.782 0 0 0 .756.772l.002.015c13.621-.002 92.283-.014 92.312-.021a.7.7 0 0 0 .546-.307s81.495-81.834 82.063-82.436a.79194.79194 0 0 1 1.111-.031c-.501-.47 24.219 24.15 24.219 24.15a.85215.85215 0 0 1 .014 1.184c.551-.59-32.954 33.572-34.971 35.743l-.465.459.014.02a112.84506 112.84506 0 1 0 196.398 75.863 114.351 114.351 0 0 0-3.028-26.184z"
+                  fill="#fff"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-search">
+        <div class="container">
+          <div class="header-search-wrapper">
+            <h1 class="header_title">اجاره ویلا در شمال و سراسر ایران زیبا</h1>
+            <div class="header_searchBox">
+              <input
+                class="searchBox-input"
+                type="text"
+                name="searchBox"
+                placeholder="میخوای کجا بری؟"
+                autocomplete="off"
+              />
+              <div class="searchBox-btn">
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="modal-search">
+                <ul></ul>
+              </div>
+            </div>
+            <div class="header_name">جاجیــــــگا</div>
+            <p class="header-text">مثل خونه خودته :)</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="home-wrapper">
+            <h3 class="home-title">مقاصد پرطرفدار</h3>
+            <div class="home-slider">
+              <div class="swiper homeSlider">
+                <div class="swiper-wrapper homeSliderWrapper"></div>
+                <div class="swiper-button-next next-btn-home">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+                  />
+                </div>
+                <div class="swiper-button-prev prev-btn-home">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+                  />
+                  <!-- <div class="swiper-pagination"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quickAccess">
+        <div class="container">
+          <div class="quickAccess-wrapper">
+            <h3 class="quickAccess-title">جستجوی سریع</h3>
+            <div class="quickAccess-slider">
+              <div class="quickAccessSlider">
+                <div class="quickAccess-slides" data-option="view">
+                  <a class="quickAccess-slide">
+                    <div class="quickAccess-slide_image">
+                      <img
+                        src="/static/img/home/special-filters/shomal.jpg"
+                        alt="the swiss"
+                      />
+                    </div>
+                    <div class="quickAccess-slide_box">
+                      <h2>منظره دل‌نواز</h2>
+                      <div class="quickAccess-slide_details">
+                        <span>0 اقامتگاه</span>
+                        <div>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="18"
+                            height="18"
+                            viewBox="0,0,256,256"
+                            style="fill: #000000"
+                          >
+                            <g
+                              fill="#ffffff"
+                              fill-rule="nonzero"
+                              stroke="none"
+                              stroke-width="1"
+                              stroke-linecap="butt"
+                              stroke-linejoin="miter"
+                              stroke-miterlimit="10"
+                              stroke-dasharray=""
+                              stroke-dashoffset="0"
+                              font-family="none"
+                              font-weight="none"
+                              font-size="none"
+                              text-anchor="none"
+                              style="mix-blend-mode: normal"
+                            >
+                              <g transform="scale(10.66667,10.66667)">
+                                <path
+                                  d="M18,2c-1.64501,0 -3,1.35499 -3,3c0,0.19095 0.02179,0.37712 0.05664,0.55859l-7.13477,4.16211c-0.52334,-0.44285 -1.1898,-0.7207 -1.92187,-0.7207c-1.64501,0 -3,1.35499 -3,3c0,1.64501 1.35499,3 3,3c0.73208,0 1.39854,-0.27785 1.92188,-0.7207l7.13477,4.16016c-0.03509,0.18206 -0.05664,0.36893 -0.05664,0.56055c0,1.64501 1.35499,3 3,3c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3c-0.73252,0 -1.39841,0.27933 -1.92187,0.72266l-7.13477,-4.16406c0.03485,-0.18147 0.05664,-0.36764 0.05664,-0.55859c0,-0.19095 -0.02179,-0.37712 -0.05664,-0.55859l7.13477,-4.16211c0.52333,0.44285 1.1898,0.7207 1.92188,0.7207c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3zM18,4c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM6,11c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM18,18c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="quickAccess-slides" data-option="estakhr">
+                  <a class="quickAccess-slide">
+                    <div class="quickAccess-slide_image">
+                      <img
+                        src="/static/img/home/special-filters/estakhr.jpg"
+                        alt="the swiss"
+                      />
+                    </div>
+                    <div class="quickAccess-slide_box">
+                      <h2>ویلا با استخر</h2>
+                      <div class="quickAccess-slide_details">
+                        <span>0 اقامتگاه</span>
+                        <div>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="18"
+                            height="18"
+                            viewBox="0,0,256,256"
+                            style="fill: #000000"
+                          >
+                            <g
+                              fill="#ffffff"
+                              fill-rule="nonzero"
+                              stroke="none"
+                              stroke-width="1"
+                              stroke-linecap="butt"
+                              stroke-linejoin="miter"
+                              stroke-miterlimit="10"
+                              stroke-dasharray=""
+                              stroke-dashoffset="0"
+                              font-family="none"
+                              font-weight="none"
+                              font-size="none"
+                              text-anchor="none"
+                              style="mix-blend-mode: normal"
+                            >
+                              <g transform="scale(10.66667,10.66667)">
+                                <path
+                                  d="M18,2c-1.64501,0 -3,1.35499 -3,3c0,0.19095 0.02179,0.37712 0.05664,0.55859l-7.13477,4.16211c-0.52334,-0.44285 -1.1898,-0.7207 -1.92187,-0.7207c-1.64501,0 -3,1.35499 -3,3c0,1.64501 1.35499,3 3,3c0.73208,0 1.39854,-0.27785 1.92188,-0.7207l7.13477,4.16016c-0.03509,0.18206 -0.05664,0.36893 -0.05664,0.56055c0,1.64501 1.35499,3 3,3c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3c-0.73252,0 -1.39841,0.27933 -1.92187,0.72266l-7.13477,-4.16406c0.03485,-0.18147 0.05664,-0.36764 0.05664,-0.55859c0,-0.19095 -0.02179,-0.37712 -0.05664,-0.55859l7.13477,-4.16211c0.52333,0.44285 1.1898,0.7207 1.92188,0.7207c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3zM18,4c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM6,11c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM18,18c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="quickAccess-slides" data-option="sahel">
+                  <a class="quickAccess-slide">
+                    <div class="quickAccess-slide_image">
+                      <img
+                        src="/static/img/home/special-filters/sahel.jpg"
+                        alt="the swiss"
+                      />
+                    </div>
+                    <div class="quickAccess-slide_box">
+                      <h2>لب ساحل</h2>
+                      <div class="quickAccess-slide_details">
+                        <span>0 اقامتگاه</span>
+                        <div>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="18"
+                            height="18"
+                            viewBox="0,0,256,256"
+                            style="fill: #000000"
+                          >
+                            <g
+                              fill="#ffffff"
+                              fill-rule="nonzero"
+                              stroke="none"
+                              stroke-width="1"
+                              stroke-linecap="butt"
+                              stroke-linejoin="miter"
+                              stroke-miterlimit="10"
+                              stroke-dasharray=""
+                              stroke-dashoffset="0"
+                              font-family="none"
+                              font-weight="none"
+                              font-size="none"
+                              text-anchor="none"
+                              style="mix-blend-mode: normal"
+                            >
+                              <g transform="scale(10.66667,10.66667)">
+                                <path
+                                  d="M18,2c-1.64501,0 -3,1.35499 -3,3c0,0.19095 0.02179,0.37712 0.05664,0.55859l-7.13477,4.16211c-0.52334,-0.44285 -1.1898,-0.7207 -1.92187,-0.7207c-1.64501,0 -3,1.35499 -3,3c0,1.64501 1.35499,3 3,3c0.73208,0 1.39854,-0.27785 1.92188,-0.7207l7.13477,4.16016c-0.03509,0.18206 -0.05664,0.36893 -0.05664,0.56055c0,1.64501 1.35499,3 3,3c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3c-0.73252,0 -1.39841,0.27933 -1.92187,0.72266l-7.13477,-4.16406c0.03485,-0.18147 0.05664,-0.36764 0.05664,-0.55859c0,-0.19095 -0.02179,-0.37712 -0.05664,-0.55859l7.13477,-4.16211c0.52333,0.44285 1.1898,0.7207 1.92188,0.7207c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3zM18,4c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM6,11c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM18,18c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="quickAccess-slides" data-option="rusta">
+                  <a class="quickAccess-slide">
+                    <div class="quickAccess-slide_image">
+                      <img
+                        src="/static/img/home/special-filters/ruralhome30f4.jpg"
+                        alt="the swiss"
+                      />
+                    </div>
+                    <div class="quickAccess-slide_box">
+                      <h2>روستایی</h2>
+                      <div class="quickAccess-slide_details">
+                        <span>0 اقامتگاه</span>
+                        <div>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="18"
+                            height="18"
+                            viewBox="0,0,256,256"
+                            style="fill: #000000"
+                          >
+                            <g
+                              fill="#ffffff"
+                              fill-rule="nonzero"
+                              stroke="none"
+                              stroke-width="1"
+                              stroke-linecap="butt"
+                              stroke-linejoin="miter"
+                              stroke-miterlimit="10"
+                              stroke-dasharray=""
+                              stroke-dashoffset="0"
+                              font-family="none"
+                              font-weight="none"
+                              font-size="none"
+                              text-anchor="none"
+                              style="mix-blend-mode: normal"
+                            >
+                              <g transform="scale(10.66667,10.66667)">
+                                <path
+                                  d="M18,2c-1.64501,0 -3,1.35499 -3,3c0,0.19095 0.02179,0.37712 0.05664,0.55859l-7.13477,4.16211c-0.52334,-0.44285 -1.1898,-0.7207 -1.92187,-0.7207c-1.64501,0 -3,1.35499 -3,3c0,1.64501 1.35499,3 3,3c0.73208,0 1.39854,-0.27785 1.92188,-0.7207l7.13477,4.16016c-0.03509,0.18206 -0.05664,0.36893 -0.05664,0.56055c0,1.64501 1.35499,3 3,3c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3c-0.73252,0 -1.39841,0.27933 -1.92187,0.72266l-7.13477,-4.16406c0.03485,-0.18147 0.05664,-0.36764 0.05664,-0.55859c0,-0.19095 -0.02179,-0.37712 -0.05664,-0.55859l7.13477,-4.16211c0.52333,0.44285 1.1898,0.7207 1.92188,0.7207c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3zM18,4c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM6,11c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM18,18c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation-detatils">
+        <div class="container">
+          <div class="reservation-details-wrapper">
+            <div class="reservation-details-slide">
+              <div class="reservation_icon">
+                <svg
+                  class=""
+                  fill="none"
+                  viewBox="0 0 51 46"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <path
+                    d="M4.82143 35.8707C11.9797 39.0051 15.5068 27.4777 23.3163 28.2136C32.8871 29.1155 33.6432 42.1236 42.9321 39.6994C52.727 37.1432 51.3299 28.2039 50.2179 18.369C49.3666 10.839 47.0778 7.21516 39.792 3.3866C27.7744 -2.9284 14.6362 -0.369894 7.06323 10.7117C1.45607 18.9167 -4.39894 31.8333 4.82143 35.8707Z"
+                    fill="#F4CA16"
+                    fill-opacity="0.5"
+                  ></path>
+                  <circle
+                    cx="33"
+                    cy="41"
+                    r="3"
+                    fill="#F4CA16"
+                    fill-opacity="0.5"
+                  ></circle>
+                  <circle
+                    cx="28"
+                    cy="43.6362"
+                    r="2"
+                    fill="#F4CA16"
+                    fill-opacity="0.5"
+                  ></circle>
+                  <path
+                    d="M40.3033 16.2994C40.7583 17.6696 40.9932 19.0984 41 20.5366C41 28.4932 34.2843 34.9434 26 34.9434C17.7157 34.9434 11 28.4932 11 20.5366C11 12.58 17.7157 6.12988 26 6.12988C27.4974 6.13638 28.985 6.36201 30.4117 6.799"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M42.1903 7.7301L37.5484 12.3037L34.5713 9.37044"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M18.7217 18.4967C18.7217 17.1936 19.8216 16.1372 21.1783 16.1372C22.5351 16.1372 23.635 17.1936 23.635 18.4967C23.635 21.4453 18.7217 21.4453 18.7217 24.9381H23.635"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M31.8867 24.9385V16.9541C31.8884 16.5901 31.6385 16.2693 31.2745 16.1681C30.9105 16.067 30.5209 16.2101 30.32 16.5187C29.275 18.1418 28.135 19.9842 27.15 21.6122C26.9861 21.8846 26.9865 22.2204 27.151 22.4925C27.3155 22.7646 27.6191 22.9313 27.9467 22.9296H33.2783"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <div class="reservation_text">
+                <h4 class="reservation_title">رزرواسیون ۲۴ ساعته</h4>
+                <p class="reservation_txt">خدمات آنلاین در تمام روزهای هفته</p>
+              </div>
+            </div>
+            <div class="reservation-details-slide">
+              <div class="reservation_icon">
+                <svg
+                  class=""
+                  fill="none"
+                  viewBox="0 0 51 50"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <path
+                    d="M26.5004 38C23.6141 36.2589 20.1164 36.8762 18.0004 39.5C14.7923 43.4781 23.7014 51.9183 27.5004 48.5C30.5624 45.7449 30.0274 40.1276 26.5004 38Z"
+                    fill="#F4CA16"
+                    fill-opacity="0.5"
+                    class=""
+                  ></path>
+                  <path
+                    d="M9.65908 42.9693C18.611 43.7419 17.4809 29.7139 25.9278 26.6398C34.0407 23.6872 38.523 36.6481 47.9693 28.22C57.4157 19.792 42.856 4.05861 30.651 0.828631C18.5966 -2.36151 6.77111 3.89279 2.31191 15.5779C-1.6359 25.9228 -1.33705 42.0202 9.65908 42.9693Z"
+                    fill="#F4CA16"
+                    fill-opacity="0.5"
+                    class=""
+                  ></path>
+                  <path
+                    d="M20.2383 24L23.7303 27.8095L30.7145 20.1905"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class=""
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.833 21.945C10.833 29.3209 15.4117 35.9219 22.3201 38.5059L22.3703 38.5247C24.0661 39.159 25.9342 39.1584 27.6297 38.523L27.6703 38.5078C34.5849 35.9164 39.1663 29.307 39.1663 21.9227V15.7171C39.1663 14.2589 38.2186 12.97 36.8268 12.5353L25.9935 9.15159C25.3464 8.94947 24.653 8.94947 24.0059 9.15159L13.1726 12.5352C11.7807 12.9699 10.833 14.2588 10.833 15.717V21.945Z"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class=""
+                  ></path>
+                </svg>
+              </div>
+              <div class="reservation_text">
+                <h4 class="reservation_title">ضمانت تحویل اقامتگاه</h4>
+                <p class="reservation_txt">
+                  تسویه با میزبان پس از تحویل اقامتگاه
+                </p>
+              </div>
+            </div>
+            <div class="reservation-details-slide">
+              <div class="reservation_icon">
+                <svg
+                  class=""
+                  fill="none"
+                  viewBox="0 0 49 53"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <path
+                    d="M17.4995 30.7948C28.4996 28.7948 26.0148 55.1128 32.9995 52.5C42.7148 48.8658 47.4995 41 48.4995 31L48.4859 30.6603C47.9989 18.4721 47.9373 16.9302 41.1901 9.35572C34.9606 3.90493 30.4718 -0.235478 22.2544 0.0104065C11.1675 0.342155 2.80512 7.65297 0.613678 18.701C-1.51483 29.4319 6.89961 32.722 17.4995 30.7948Z"
+                    fill="#F4CA16"
+                    fill-opacity="0.5"
+                    class="st-current st-hover"
+                  ></path>
+                  <path
+                    d="M35.8626 21.0186V11.6613C35.8626 10.741 35.1157 9.99399 34.1953 9.99399H31.099C30.1786 9.99399 29.4316 10.741 29.4316 11.6613V15.5063"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M7.99414 22.856L20.8295 11.8548C22.0783 10.7843 23.9208 10.7843 25.1696 11.8548L38.0066 22.856"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class=""
+                  ></path>
+                  <path
+                    d="M10.1387 21.0186V36.6718C10.1387 38.5142 11.631 40.0065 13.4734 40.0065H21.3333"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class=""
+                  ></path>
+                  <path
+                    d="M32.1711 41.674C28.0277 41.674 24.668 38.3143 24.668 34.1709C24.668 30.0275 28.0277 26.6678 32.1711 26.6678C36.3162 26.6678 39.6742 30.0275 39.6742 34.1709C39.6742 38.3143 36.3162 41.674 32.1711 41.674"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M35.1352 32.6885L31.4303 36.3933L29.2061 34.1707"
+                    stroke="#072FF0"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <div class="reservation_text">
+                <h4 class="reservation_title">کم هزینه و با کیفیت</h4>
+                <p class="reservation_txt">اقامت با کیفیت تر با هزینه کمتر</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="residence">
+        <div class="container">
+          <h3 class="residence-title">
+            اقامتگاه‌های ممتاز
+            <small class="residence-text">
+              گلچینی از اﻗﺎﻣﺘﮕﺎه‌ﻫﺎی ﺑﺎکیفیت ﺑﺎ میزبانهای مهمان نواز
+            </small>
+          </h3>
+        </div>
+
+        <div class="residence-content">
+          <div class="swiper residenceSliderPremium">
+            <div class="swiper-wrapper RSPremiumWrapper"></div>
+            <!-- <div class="swiper-pagination"></div>  -->
+            <div class="swiper-button-next next-btn-residencePremium">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="swiper-button-prev prev-btn-residencePremium">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="residence">
+        <div class="container">
+          <h3 class="residence-title">
+            اقامتگاه‌های خاص
+            <small class="residence-text">
+              اﻗﺎﻣﺘﮕﺎه‌ﻫﺎی متفاوت و جذاب ﺑﺮای اﻓﺮاد ﺧﺎص
+            </small>
+          </h3>
+        </div>
+
+        <div class="residence-content">
+          <div class="swiper residenceSliderSpecial">
+            <div class="swiper-wrapper RSSpecialWrapper"></div>
+            <div class="swiper-button-next next-btn-residenceSpecial">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="swiper-button-prev prev-btn-residenceSpecial">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="residence">
+        <div class="container">
+          <h3 class="residence-title">
+            اقامتگاه‌های رزرو فوری
+            <small class="residence-text">
+              رزرو فوری بدون نیاز به تایید میزبان
+            </small>
+          </h3>
+        </div>
+
+        <div class="residence-content">
+          <div class="swiper residenceSliderQuickly">
+            <div class="swiper-wrapper RSQuicklyWrapper"></div>
+            <div class="swiper-button-next next-btn-residenceQuickly">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="swiper-button-prev prev-btn-residenceQuickly">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="residence residence-discount">
+        <div class="residence-disount-wrapper">
+          <div class="residence_discount_image">
+            <img
+              src="static/img/home/amazing-discounted-title@2x3860.png"
+              alt="discount"
+            />
+          </div>
+
+          <div class="residence_discount_navbar">
+            <ul>
+              <li class="residence_dicount_item active" data-state="allState">
+                همه شهرها
+              </li>
+              <li class="residence_dicount_item" data-state="Tehran">تهران</li>
+              <li class="residence_dicount_item" data-state="Mazandaran">
+                مازندران
+              </li>
+              <li class="residence_dicount_item" data-state="Tabriz">تبریز</li>
+              <li class="residence_dicount_item" data-state="Rasht">رشت</li>
+              <li class="residence_dicount_item" data-state="Kish">کیش</li>
+              <li class="residence_dicount_item" data-state="Geshm">قشم</li>
+              <li class="residence_dicount_item" data-state="Kerman">کرمان</li>
+              <li class="residence_dicount_item" data-state="Shomal">شمال</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="residence-content">
+          <div class="swiper residenceSliderDiscount">
+            <div class="swiper-wrapper RSDiscountWrapper"></div>
+
+            <div class="swiper-button-next next-btn-residenceDiscount">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="swiper-button-prev prev-btn-residenceDiscount">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="residence">
+        <div class="container">
+          <h3 class="residence-title">
+            ویلاهای لوکس و مجلل
+            <small class="residence-text">
+              ویلاهای لوکس و لاکچری برای مشکل پسندها
+            </small>
+          </h3>
+        </div>
+
+        <div class="residence-content">
+          <div class="swiper residenceSliderLuxury">
+            <div class="swiper-wrapper RSLuxuryWrapper"></div>
+
+            <div class="swiper-button-next next-btn-residenceLuxury">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="swiper-button-prev prev-btn-residenceLuxury">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="residence">
+        <div class="container">
+          <h3 class="residence-title">
+            اقامتگاه‌های اقتصادی
+            <small class="residence-text">
+              اقامتگاه‌هایی با کیفیت و نرخ مناسب
+            </small>
+          </h3>
+        </div>
+
+        <div class="residence-content">
+          <div class="swiper residenceSliderEconomic">
+            <div class="swiper-wrapper RSEconomicWrapper"></div>
+
+            <div class="swiper-button-next next-btn-residenceEconomic">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="swiper-button-prev prev-btn-residenceEconomic">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel-hosting">
+        <a href="/"
+          ><div class="panel-hosting-wrapper">
+            <div class="panel-hosting-context">
+              <h3 class="panel-hosting-title" title="میزبان شوید">
+                میزبان شوید
+              </h3>
+              <p class="panel-hosting-txt">
+                میزبانان جاجیگا مردم واقعی هستند که فضای اقامتی بیش از نیاز خود
+                را با شرایطی منصفانه به گردشگران اجاره می‌دهند و درآمدی
+                شرافتمندانه کسب می‌کنند.
+              </p>
+              <button class="panel-hosting-btn" type="button">
+                توضیحات بیشتر
+              </button>
+            </div>
+            <div class="panel-hosting-image">
+              <img
+                draggable="false"
+                alt="میزبان شوید"
+                loading="lazy"
+                decoding="async"
+                data-nimg="fill"
+                class="panel-hosting-img"
+                style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  left: 0;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  color: transparent;
+                "
+                src="static/img/home/become-host/image-desktopbea6.jpg"
+              />
+            </div></div
+        ></a>
+      </section>
+
+      <section class="residence">
+        <div class="container">
+          <h3 class="residence-title">
+            اجاره ویلا اطراف تهران
+            <small class="residence-text">
+              ویلاهای کردان، دماوند، شهریار و سایر مناطق اطراف تهران
+            </small>
+          </h3>
+        </div>
+
+        <div class="residence-content">
+          <div class="swiper residenceSliderTehran">
+            <div class="swiper-wrapper RSTehranWrapper"></div>
+
+            <div class="swiper-button-next next-btn-residenceTehran">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="swiper-button-prev prev-btn-residenceTehran">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="residence">
+        <div class="container">
+          <h3 class="residence-title">
+            اجاره ویلا شمال
+
+            <small class="residence-text">
+              بهترین ویلاهای گیلان، مازندران و گلستان
+            </small>
+          </h3>
+        </div>
+
+        <div class="residence-content">
+          <div class="swiper residenceSliderShomal">
+            <div class="swiper-wrapper RSShomalWrapper"></div>
+
+            <div class="swiper-button-next next-btn-residenceShomal">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="swiper-button-prev prev-btn-residenceShomal">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="comments">
+        <div class="container">
+          <h3 class="comments-title residence-title">نظرات کاربران</h3>
+        </div>
+
+        <div class="comments-wrapper">
+          <div class="swiper comment-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="comment-slide">
+                  <div class="comment-image">
+                    <div class="comment-image-style">
+                      <img src="/static/img/public/avatar/1.jpg" alt="image" />
+                    </div>
+                  </div>
+
+                  <div class="comment-context">
+                    <div class="comment_title">
+                      <div class="comment-icon">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 20 17.3"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M0,12.5c0,2.6,2.1,4.8,4.8,4.8c2.6,0,4.8-2.1,4.8-4.8S7.4,7.8,4.8,7.8C4.2,7.8,3.7,7.9,3.2,8C4.3,1.9,9.1-2.1,4.6,1.2 C-0.3,4.8,0,12.4,0,12.5C0,12.5,0,12.5,0,12.5z M10.5,12.5c0,2.6,2.1,4.8,4.8,4.8s4.8-2.1,4.8-4.8s-2.1-4.8-4.8-4.8 c-0.5,0-1.1,0.1-1.5,0.3c1.1-6.1,5.9-10.1,1.4-6.8C10.2,4.8,10.5,12.4,10.5,12.5C10.5,12.5,10.5,12.5,10.5,12.5L10.5,12.5z"
+                          ></path>
+                        </svg>
+                      </div>
+                      آیسان
+                    </div>
+                    <div class="comment_text">مهمان جاجیگا از مرداد 99</div>
+                    <div class="comment_description">
+                      من امسال یک مسافرت یک هفته‌ای شمال رفتم و ۴ اقامتگاه تو
+                      شهرهای مختلف از سایت شما گرفتم که من و همه همراهانم خیلی
+                      راضی بودیم. از این به بعد سفر به همه جای ایران فقط با
+                      جاجیگا :)
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment-slide">
+                  <div class="comment-image">
+                    <div class="comment-image-style">
+                      <img src="/static/img/public/avatar/2.jpg" alt="image" />
+                    </div>
+                  </div>
+
+                  <div class="comment-context">
+                    <div class="comment_title">
+                      <div class="comment-icon">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 20 17.3"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M0,12.5c0,2.6,2.1,4.8,4.8,4.8c2.6,0,4.8-2.1,4.8-4.8S7.4,7.8,4.8,7.8C4.2,7.8,3.7,7.9,3.2,8C4.3,1.9,9.1-2.1,4.6,1.2 C-0.3,4.8,0,12.4,0,12.5C0,12.5,0,12.5,0,12.5z M10.5,12.5c0,2.6,2.1,4.8,4.8,4.8s4.8-2.1,4.8-4.8s-2.1-4.8-4.8-4.8 c-0.5,0-1.1,0.1-1.5,0.3c1.1-6.1,5.9-10.1,1.4-6.8C10.2,4.8,10.5,12.4,10.5,12.5C10.5,12.5,10.5,12.5,10.5,12.5L10.5,12.5z"
+                          ></path>
+                        </svg>
+                      </div>
+                      دریا
+                    </div>
+                    <div class="comment_text">مهمان جاجیگا از مهر 96</div>
+                    <div class="comment_description">
+                      عملکرد وبسایت خیلی خوب و اثر بخش بود. من حتما دوستان اهل
+                      سفرم رو به استفاده از این وبسایت ترغیب می کنم. پیشنهاد
+                      می‌کنم شهرها و اقامتگاه‌های بیشتری رو تحت پوشش بگیرید.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment-slide">
+                  <div class="comment-image">
+                    <div class="comment-image-style">
+                      <img src="/static/img/public/avatar/3.jpg" alt="image" />
+                    </div>
+                  </div>
+
+                  <div class="comment-context">
+                    <div class="comment_title">
+                      <div class="comment-icon">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 20 17.3"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M0,12.5c0,2.6,2.1,4.8,4.8,4.8c2.6,0,4.8-2.1,4.8-4.8S7.4,7.8,4.8,7.8C4.2,7.8,3.7,7.9,3.2,8C4.3,1.9,9.1-2.1,4.6,1.2 C-0.3,4.8,0,12.4,0,12.5C0,12.5,0,12.5,0,12.5z M10.5,12.5c0,2.6,2.1,4.8,4.8,4.8s4.8-2.1,4.8-4.8s-2.1-4.8-4.8-4.8 c-0.5,0-1.1,0.1-1.5,0.3c1.1-6.1,5.9-10.1,1.4-6.8C10.2,4.8,10.5,12.4,10.5,12.5C10.5,12.5,10.5,12.5,10.5,12.5L10.5,12.5z"
+                          ></path>
+                        </svg>
+                      </div>
+                      ندا
+                    </div>
+                    <div class="comment_text">مهمان جاجیگا از مهر 96</div>
+                    <div class="comment_description">
+                      جاجیگا خیلی خوبه. اینکه بتونی از قبل جات رو رزرو کنی و بعد
+                      با خیال راحت بری سفر عالیه... ما حتی یه مشکلی پیش اومد
+                      رزرو رو تغییر دادیم و تو سایت کارمون رو به سرعت انجام
+                      دادن. مرسی
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment-slide">
+                  <div class="comment-image">
+                    <div class="comment-image-style">
+                      <img src="/static/img/public/avatar/4.jpg" alt="image" />
+                    </div>
+                  </div>
+
+                  <div class="comment-context">
+                    <div class="comment_title">
+                      <div class="comment-icon">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 20 17.3"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M0,12.5c0,2.6,2.1,4.8,4.8,4.8c2.6,0,4.8-2.1,4.8-4.8S7.4,7.8,4.8,7.8C4.2,7.8,3.7,7.9,3.2,8C4.3,1.9,9.1-2.1,4.6,1.2 C-0.3,4.8,0,12.4,0,12.5C0,12.5,0,12.5,0,12.5z M10.5,12.5c0,2.6,2.1,4.8,4.8,4.8s4.8-2.1,4.8-4.8s-2.1-4.8-4.8-4.8 c-0.5,0-1.1,0.1-1.5,0.3c1.1-6.1,5.9-10.1,1.4-6.8C10.2,4.8,10.5,12.4,10.5,12.5C10.5,12.5,10.5,12.5,10.5,12.5L10.5,12.5z"
+                          ></path>
+                        </svg>
+                      </div>
+                      فریبرز
+                    </div>
+                    <div class="comment_text">مهمان جاجیگا از مرداد 99</div>
+                    <div class="comment_description">
+                      من یه جایی رو تو قلعه رودخان رزرو کردم و راستش انتظار
+                      نداشتم همه چیز انقدر خوب و مرتب پیش بره ... چون عادت دارم
+                      مکان اقامتم رو از قبل مشخص کنم جاجیگا گزینه خوبی برام بود
+                      و در سفرهای بعدی هم استفاده می‌کنم.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment-slide">
+                  <div class="comment-image">
+                    <div class="comment-image-style">
+                      <img src="/static/img/public/avatar/5.jpg" alt="image" />
+                    </div>
+                  </div>
+
+                  <div class="comment-context">
+                    <div class="comment_title">
+                      <div class="comment-icon">
+                        <svg
+                          version="1.1"
+                          id="Layer_1"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 20 17.3"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M0,12.5c0,2.6,2.1,4.8,4.8,4.8c2.6,0,4.8-2.1,4.8-4.8S7.4,7.8,4.8,7.8C4.2,7.8,3.7,7.9,3.2,8C4.3,1.9,9.1-2.1,4.6,1.2 C-0.3,4.8,0,12.4,0,12.5C0,12.5,0,12.5,0,12.5z M10.5,12.5c0,2.6,2.1,4.8,4.8,4.8s4.8-2.1,4.8-4.8s-2.1-4.8-4.8-4.8 c-0.5,0-1.1,0.1-1.5,0.3c1.1-6.1,5.9-10.1,1.4-6.8C10.2,4.8,10.5,12.4,10.5,12.5C10.5,12.5,10.5,12.5,10.5,12.5L10.5,12.5z"
+                          ></path>
+                        </svg>
+                      </div>
+                      محمد
+                    </div>
+                    <div class="comment_text">مهمان جاجیگا از مرداد 96</div>
+                    <div class="comment_description">
+                      راستش حاجی, کار کردن با این وبسایت شما برام سخت بود و
+                      اعصابمو خورد کرد! چون کلی مراحل داره و آسمون ریسمون میکنه
+                      ... من دفعه بعد از همون لب جاده یه خونه‌ای چیزی پیدا
+                      می‌کنم و اجاره می‌کنم برام راحت تره. دم شمام گرم
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination3"></div> -->
+            <div class="swiper-button-next next-btn-comment">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAWUlEQVR4nO3UMQtAYBCA4Qd/W5kprLbP5meS+pTJoCuKd7vlGa7reEElOtRRWMKKPgKbM5byfLsfe3hn8p2FYXttNFhgyuiC6kc/tNPy9L6GCPBARzRR4GUbacUl33f/q9EAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="swiper-button-prev prev-btn-comment">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAV0lEQVR4nO3UMQrAIBSD4d/nuYWuLdS5m249piK8E5SgQ80BviGEwKQk4AJMBd5AA4oKDcDj6AvEjf6oU/MpNd+pFDwVWFUN3ja2trORrL6vw1HZwX5OB7MsJeCogLp0AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="about">
+        <h2 class="about-title" title="اجاره ویلا، آنلاین و مطمئن در جاجیگا">
+          اجاره ویلا، آنلاین و مطمئن در جاجیگا
+        </h2>
+        <p class="about-txt">
+          سفر تو خون ما ایرانیهاست و معمولا بهترین خاطرات عمرمون در سفرهامون رقم
+          می خوره، به خصوص اگر سفری خانوادگی یا در جمع دوستان بهتر از جان باشه.
+          اجاره ویلا در شمال باشه یا اجاره سوئیت در کیش یا سوئیت در اصفهان و
+          شیراز، اجاره ویلا استخردار یا کلبه جنگلی یا ویلا ساحلی، اجاره ویلا
+          ارزان قیمت یا اجاره ویلا لوکس و لاکچری، هر نوع اقامتگاهی رو که اراده
+          کنید<!-- -->
+          در هر محدوده قیمتی، می تونید اون رو در سایت جاجیگا بیابید، نظرات
+          مهمانهای قبلی رو مطالعه کنید و در نهایت اقامتگاه مطلوبتون رو بصورت
+          آنلاین نزد یکی از صدها میزبان خوش ذوق و با انصاف جاجیگا رزرو کنید و
+          مطمئن باشید که تمام تیم جاجیگا رو تا پایان سفر در کنارتون خواهید داشت
+          :)
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-right">
+              <div class="footer_links">
+                <div class="footer_links-routings">
+                  <h3 class="footer_links-title">لینک های دسترسی</h3>
+                  <div class="footer-links-routing">
+                    <div class="footer_links-routing-wrapper">
+                      <a href="/" class="footer_routing-item"
+                        >چـگونـه مـهمـان شـوم</a
+                      ><a href="/" class="footer_routing-item"
+                        >قــوانــیــن و مــقــررات</a
+                      ><a href="/" class="footer_routing-item"
+                        >پــشــتــیــبــانــــی</a
+                      ><a href="/" class="footer_routing-item"
+                        >فــرصــت‌هــای شـغـلـی
+                      </a>
+                    </div>
+                    <div class="footer_links-routing-wrapper">
+                      <a href="/" class="footer_routing-item"
+                        >چـگونـه مـیزبان شـوم</a
+                      ><a href="/" class="footer_routing-item"
+                        >مــــقـــررات لـــغــو رزرو</a
+                      ><a href="/" class="footer_routing-item"
+                        >ثــــبــــت شــــکـــایــت</a
+                      ><a href="/" class="footer_routing-item"
+                        >راهــنــمــــای ســـایــت</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer_links-market">
+                  <h3 class="footer_links-title" title="نصب اپلیکیشن جاجیگا">
+                    نصب اپلیکیشن جاجیگا
+                  </h3>
+                  <div class="footer_markets-wrpper">
+                    <div class="footer_market-image">
+                      <a
+                        aria-label="bazaar"
+                        draggable="false"
+                        href="https://cafebazaar.ir/app/com.jajiga.app"
+                        ><div class="footer_market-link">
+                          <img
+                            draggable="false"
+                            alt="bazaar"
+                            loading="lazy"
+                            decoding="async"
+                            data-nimg="fill"
+                            class="sc-c2a81f3d-0 eUeuGv"
+                            style="
+                              position: absolute;
+                              height: 100%;
+                              width: 100%;
+                              left: 0;
+                              top: 0;
+                              right: 0;
+                              bottom: 0;
+                              color: transparent;
+                            "
+                            src="/static/img/markets/Bazzar.png"
+                          /></div
+                      ></a>
+                    </div>
+                    <div class="footer_market-image">
+                      <a
+                        aria-label="google-play"
+                        draggable="false"
+                        href="https://play.google.com/store/apps/details?id=com.jajiga.app"
+                        ><div class="footer_market-link">
+                          <img
+                            draggable="false"
+                            alt="google-play"
+                            loading="lazy"
+                            decoding="async"
+                            data-nimg="fill"
+                            class="sc-c2a81f3d-0 eUeuGv"
+                            style="
+                              position: absolute;
+                              height: 100%;
+                              width: 100%;
+                              left: 0;
+                              top: 0;
+                              right: 0;
+                              bottom: 0;
+                              color: transparent;
+                            "
+                            src="/static/img/markets/PlayStore.png"
+                          /></div
+                      ></a>
+                    </div>
+                    <div class="footer_market-image">
+                      <a
+                        aria-label="myket"
+                        draggable="false"
+                        href="https://myket.ir/app/com.jajiga.app"
+                        ><div class="footer_market-link">
+                          <img
+                            draggable="false"
+                            alt="myket"
+                            loading="lazy"
+                            decoding="async"
+                            data-nimg="fill"
+                            class="sc-c2a81f3d-0 eUeuGv"
+                            style="
+                              position: absolute;
+                              height: 100%;
+                              width: 100%;
+                              left: 0;
+                              top: 0;
+                              right: 0;
+                              bottom: 0;
+                              color: transparent;
+                            "
+                            src="/static/img/markets/Myket.png"
+                          /></div
+                      ></a>
+                    </div>
+                    <div class="footer_market-image">
+                      <div class="footer_market-link">
+                        <img
+                          decoding="async"
+                          data-nimg="fill"
+                          class="sc-c2a81f3d-0 eUeuGv"
+                          style="
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            color: transparent;
+                          "
+                          src="/static/img/markets/WebApp.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer_links-social">
+                  <h3 class="footer_links-title" title="با ما همراه شوید">
+                    با ما همراه شوید
+                  </h3>
+                  <div class="footer_social-wrapper">
+                    <a
+                      name="instagram"
+                      class="footer_social-item instagram"
+                      href="https://www.instagram.com/jajiga.iran"
+                      rel="noreferrer"
+                      target="_blank"
+                      ><i class="icon_instagram sc-7b1d8faa-0 dhtkZw"></i
+                      ><span class="sc-892304fe-1 jnREMN">700K</span></a
+                    ><a
+                      name="telegram"
+                      class="footer_social-item telegram"
+                      href="https://t.me/jajiga"
+                      rel="noreferrer"
+                      target="_blank"
+                      ><i class="icon_telegram sc-7b1d8faa-0 dhtkZw"></i
+                      ><span class="sc-892304fe-1 jnREMN">20K</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="footer_places">
+                <div cols="5" class="footer_place-wrapper">
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/shomal"
+                      >اجاره ویلا شمال</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/wooden-cottage"
+                      >اجاره کلبه چوبی</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/ramsar"
+                      >اجاره ویلا رامسر</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/pool"
+                      >اجاره ویلا استخردار</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/mashhad"
+                      >سوئیت مشهد</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/kordan"
+                      >اجاره ویلا کردان</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/masal"
+                      >اجاره ویلا ماسال</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/kish"
+                      >اجاره سوئیت در کیش</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/tehransuburb"
+                      >اجاره ویلا اطراف تهران
+                    </a>
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/istanbul"
+                      >اجاره سوئیت استانبول</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/savadkuh"
+                      >اجاره ویلا سوادکوه</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/qeshm"
+                      >سوئیت قشم</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/bandaranzali"
+                      >اجاره ویلا انزلی</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/chalus"
+                      >اجاره ویلا چالوس</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/tehran/suite"
+                      >اجاره سوئیت در تهران</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/shiraz"
+                      >اجاره سوئیت در شیراز</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/rasht"
+                      >اجاره ویلا رشت</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/filband"
+                      >اجاره ویلا در فیلبند</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/isfahan"
+                      >اجاره سوئیت در اصفهان</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/mahmudabad"
+                      >اجاره ویلا محمودآباد</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/shomal/pool"
+                      >ویلا استخردار شمال</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/ecolog"
+                      >رزرو اقامتگاه بوم گردی</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/villa"
+                      >اجاره ویلا</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/gilan"
+                      >اجاره ویلا گیلان</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/shomal/beach"
+                      >اجاره ویلا ساحلی شمال</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-left">
+              <h3
+                class="footer-left-title"
+                title="با خیال راحت به جاجیگا اعتماد کنید"
+              >
+                با خیال راحت به جاجیگا اعتماد کنید
+              </h3>
+              <div class="footer-left-enamad">
+                <div class="footer_enamad-image">
+                  <div class="footer_enamad-img">
+                    <img
+                      draggable="false"
+                      alt="enamad"
+                      loading="lazy"
+                      decoding="async"
+                      data-nimg="fill"
+                      class="sc-c2a81f3d-0 eUeuGv"
+                      style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      "
+                      src="/static/img/footer/enamad.png"
+                    />
+                  </div>
+                </div>
+                <div class="footer_enamad-image">
+                  <div class="footer_enamad-img">
+                    <img
+                      draggable="false"
+                      alt="ecunion"
+                      loading="lazy"
+                      decoding="async"
+                      data-nimg="fill"
+                      class="sc-c2a81f3d-0 eUeuGv"
+                      style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      "
+                      src="/static/img/footer/ecunion.png"
+                    />
+                  </div>
+                </div>
+                <div style="height: 6.2rem" class="footer_enamad-image">
+                  <span
+                    class="sc-b1c97945-0 bceJqj sc-d31da7dc-3 epXhon"
+                    tabindex="0"
+                    ><div class="footer_enamad-img">
+                      <img
+                        draggable="false"
+                        alt="mcth"
+                        loading="lazy"
+                        decoding="async"
+                        data-nimg="fill"
+                        class="sc-c2a81f3d-0 eUeuGv"
+                        style="
+                          position: absolute;
+                          height: 100%;
+                          width: 100%;
+                          left: 0;
+                          top: 0;
+                          right: 0;
+                          bottom: 0;
+                          color: transparent;
+                        "
+                        src="/static/img/footer/mcth.png"
+                      /></div
+                  ></span>
+                </div>
+                <div class="footer_enamad-image">
+                  <div class="footer_enamad-img">
+                    <img
+                      draggable="false"
+                      alt="iwfm"
+                      loading="lazy"
+                      decoding="async"
+                      data-nimg="fill"
+                      class="sc-c2a81f3d-0 eUeuGv"
+                      style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      "
+                      src="/static/img/footer/iwfm.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="copyRight">
+        کلیه حقوق این وبسایت متعلق به شرکت تجارت الکترونیک لوتوس آرمانی (سهامی
+        خاص) می‌باشد.
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modals"></div>
+    <!-- Aside menu -->
+    <div class="drawers">
+      <div class="drawers-bg-blur"></div>
+      <div class="drawers-wrapper">
+        <div class="drawers-close">
+          <button aria-label="close" class="drawers-close-btn" type="button">
+            <i class="drawers-close-icon" aria-label="close"></i>
+          </button>
+        </div>
+        <div class="aside-menu">
+          <div class="aside-menu-wrapper">
+            <div class="aside-menu-items">
+              <div class="aside-loginSignup-container">
+                <div class="aside-loginSignup">
+                  <div class="aside-loginSignup-icon">
+                    <a href="/">
+                      <svg
+                        class=""
+                        fill="#d6d6d6"
+                        viewBox="0 0 32 32"
+                        preserveAspectRatio="xMidYMid meet"
+                      >
+                        <defs>
+                          <clipPath id="clip-path">
+                            <polygon
+                              points="0 0 32 0 32 1.23 32 32 0 32 0 0"
+                              style="fill: none"
+                            ></polygon>
+                          </clipPath>
+                        </defs>
+                        <g style="clip-path: url('#clip-path')">
+                          <path
+                            d="M16,32A16,16,0,1,1,32,16,16,16,0,0,1,16,32ZM16,1.52A14.48,14.48,0,0,0,1.52,16a14.82,14.82,0,0,0,.28,2.82,14.48,14.48,0,0,0,28.4,0A15,15,0,0,0,30.48,16,14.5,14.5,0,0,0,16,1.52Z"
+                          ></path>
+                          <path
+                            d="M20.5,13.5A4.5,4.5,0,1,1,16,9,4.49,4.49,0,0,1,20.5,13.5ZM19,18.71a6,6,0,1,0-5.94,0A9.76,9.76,0,0,0,6.25,28a.75.75,0,0,0,1.5,0,8.25,8.25,0,0,1,15.87-3.16h0A8.18,8.18,0,0,1,24.25,28a.75.75,0,0,0,1.5,0A9.76,9.76,0,0,0,19,18.71Z"
+                            style="fill-rule: evenodd"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="">
+                    <button
+                      class="aside-loginSignup-btn login-signUp"
+                      type="button"
+                    >
+                      ورود / ثبت‌نام
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr class="aside-menu-hr" />
+              <div class="aside-items-container">
+                <div class="aside_item active">
+                  <a theme="[object Object]" class="aside_item-txt" href="/"
+                    ><i class="icon_homes aside_item-icon"></i>صفحه اصلی</a
+                  >
+                </div>
+                <div class="aside_item">
+                  <a
+                    theme="[object Object]"
+                    class="aside_item-txt"
+                    href="/wishes"
+                    ><i class="icon_favorite aside_item-icon"></i>
+                    <div class="sc-de3ce021-0 JUsap">علاقه‌مندی‌ها</div></a
+                  >
+                </div>
+                <div class="aside_item">
+                  <div class="sc-de3ce021-0 fAbrgU">
+                    <a
+                      theme="[object Object]"
+                      class="aside_item-txt"
+                      href="/host"
+                      ><i class="icon_home-add aside_item-icon"></i>میزبان شو</a
+                    >
+                  </div>
+                </div>
+                <div class="aside_item">
+                  <a
+                    theme="[object Object]"
+                    class="aside_item-txt"
+                    href="/support"
+                    ><i class="icon_support aside_item-icon"></i>
+                    <div class="sc-de3ce021-0 JUsap">پشتیبانی</div></a
+                  >
+                </div>
+                <div class="aside_item">
+                  <a theme="[object Object]" class="aside_item-txt" href="/faq"
+                    ><i class="icon_faq aside_item-icon"></i>سوالات متداول</a
+                  >
+                </div>
+                <div class="aside_item">
+                  <a theme="[object Object]" class="aside_item-txt" href="/help"
+                    ><i class="icon_help aside_item-icon"></i>راهنما</a
+                  >
+                </div>
+                <div class="aside_item">
+                  <a
+                    theme="[object Object]"
+                    class="aside_item-txt"
+                    href="/guarantee"
+                    ><i class="icon_guarantee aside_item-icon"></i>ضمانت
+                    تحویل</a
+                  >
+                </div>
+                <div class="aside_item">
+                  <a
+                    theme="[object Object]"
+                    class="aside_item-txt"
+                    href="/rules"
+                    ><i class="icon_rules aside_item-icon"></i>قوانین وبسایت</a
+                  >
+                </div>
+                <hr class="aside-menu-hr aside-menu-hr2" />
+                <div class="aside_item">
+                  <a
+                    theme="[object Object]"
+                    class="aside_item-txt"
+                    href="/invite"
+                    ><i class="icon_gift aside_item-icon"></i>
+                    <div class="sc-de3ce021-0 JUsap">دعوت از دوستان</div></a
+                  >
+                </div>
+                <div class="aside_item">
+                  <a theme="[object Object]" class="aside_item-txt" href="/app"
+                    ><i class="icon_install-app aside_item-icon"></i>نصب
+                    جاجیگا</a
+                  >
+                </div>
+                <div class="aside_item">
+                  <a theme="[object Object]" class="aside_item-txt" href="/jobs"
+                    ><i class="icon_jobs aside_item-icon"></i>فرصت‌های شغلی</a
+                  >
+                </div>
+                <div class="aside_item">
+                  <a
+                    theme="[object Object]"
+                    class="aside_item-txt"
+                    href="/about"
+                    ><i class="icon_info aside_item-icon"></i>درباره ما</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="aside-menu-bottom">
+              <p class="web-version">0.131.24</p>
+              <div class="aside_bottom-socials">
+                <a
+                  class="aside_bottom-social"
+                  href="https://t.me/jajiga"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="icon_telegram aside_bottom-social-icon"
+                    aria-label="telegram"
+                  ></i></a
+                ><a
+                  class="aside_bottom-social"
+                  href="https://www.instagram.com/jajiga.iran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="icon_instagram-nav aside_bottom-social-icon"
+                    aria-label="instagram-nav"
+                  ></i></a
+                ><a
+                  class="aside_bottom-social"
+                  href="https://twitter.com/jajiga_iran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="icon_twitter aside_bottom-social-icon"
+                    aria-label="twitter"
+                  ></i></a
+                ><a
+                  class="aside_bottom-social"
+                  href="https://www.aparat.com/jajiga"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="icon_youtube aside_bottom-social-icon"
+                    aria-label="youtube"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- loading -->
+    <div class="loading active">
+      <video
+        loading="lazy"
+        muted="muted"
+        src="./static/img/loading/car-on-the-road-4851957-4042273.mp4"
+        type="video/mp4"
+        autoplay="autoplay"
+        loop="loop"
+      ></video>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="static/js/swiper.js"></script>
+    <script type="module" src="static/js/script.js"></script>
+    <script type="module" src="static/js/modals.js"></script>
+    <script type="module" src="static/js/cookie.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAJIGA-Room</title>
+    <link rel="stylesheet" href="static/style/style.css" />
+    <link rel="stylesheet" href="static/style/normalize.css" />
+    <link rel="stylesheet" href="static/style/room.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav-wrapper-items-right">
+          <div class="profile">
+            <div class="profile-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon_menu"
+                x="0px"
+                y="0px"
+                width="24"
+                height="24"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  d="M 6 9 A 2.0002 2.0002 0 1 0 6 13 L 42 13 A 2.0002 2.0002 0 1 0 42 9 L 6 9 z M 6 22 A 2.0002 2.0002 0 1 0 6 26 L 42 26 A 2.0002 2.0002 0 1 0 42 22 L 6 22 z M 6 35 A 2.0002 2.0002 0 1 0 6 39 L 42 39 A 2.0002 2.0002 0 1 0 42 35 L 6 35 z"
+                ></path>
+              </svg>
+
+              <div class="profile-person">
+                <svg
+                  class=""
+                  fill="#d6d6d6"
+                  viewBox="0 0 32 32"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <defs>
+                    <clipPath id="clip-path">
+                      <polygon
+                        points="0 0 32 0 32 1.23 32 32 0 32 0 0"
+                        style="fill: none"
+                      ></polygon>
+                    </clipPath>
+                  </defs>
+                  <g style="clip-path: url(#clip-path)">
+                    <path
+                      d="M16,32A16,16,0,1,1,32,16,16,16,0,0,1,16,32ZM16,1.52A14.48,14.48,0,0,0,1.52,16a14.82,14.82,0,0,0,.28,2.82,14.48,14.48,0,0,0,28.4,0A15,15,0,0,0,30.48,16,14.5,14.5,0,0,0,16,1.52Z"
+                    ></path>
+                    <path
+                      d="M20.5,13.5A4.5,4.5,0,1,1,16,9,4.49,4.49,0,0,1,20.5,13.5ZM19,18.71a6,6,0,1,0-5.94,0A9.76,9.76,0,0,0,6.25,28a.75.75,0,0,0,1.5,0,8.25,8.25,0,0,1,15.87-3.16h0A8.18,8.18,0,0,1,24.25,28a.75.75,0,0,0,1.5,0A9.76,9.76,0,0,0,19,18.71Z"
+                      style="fill-rule: evenodd"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="nav-menu">
+            <ul class="nav-menu_items">
+              <li class="nav_item"><a href="/">علاقه‌مندی‌ها</a></li>
+              <li class="nav_item"><a href="/">میزبان شوید</a></li>
+              <li class="nav_item login-signUp">
+                <a href="/">ورود / ثبت‌نام</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-scrolled-items">
+          <div id="nav_support_btn" class="nav-support-btn">
+            <a aria-label="پشتیبانی" draggable="false" href="/support"
+              ><svg class="" fill="none" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19 17H18C17.448 17 17 16.552 17 16V11C17 10.448 17.448 10 18 10H19C20.105 10 21 10.895 21 12V15C21 16.105 20.105 17 19 17Z"
+                  fill="#F0C807"
+                  stroke="#323232"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6 17H5C3.895 17 3 16.105 3 15V12C3 10.895 3.895 10 5 10H6C6.552 10 7 10.448 7 11V16C7 16.552 6.552 17 6 17Z"
+                  fill="#F0C807"
+                  stroke="#323232"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M18.5 10V9.5C18.5 5.91 15.59 3 12 3V3C8.41 3 5.5 5.91 5.5 9.5V10"
+                  stroke="#323232"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.625 21.25H11.375C10.685 21.25 10.125 20.69 10.125 20C10.125 19.31 10.685 18.75 11.375 18.75H12.625C13.315 18.75 13.875 19.31 13.875 20C13.875 20.69 13.315 21.25 12.625 21.25Z"
+                  fill="#F0C807"
+                  stroke="#323232"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13.875 20H16C17.105 20 18 19.105 18 18V17"
+                  stroke="#323232"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg
+            ></a>
+          </div>
+
+          <div class="header_searchBox nav-searchBox">
+            <input
+              class="searchBox-input"
+              type="text"
+              name="searchBox"
+              placeholder="میخوای کجا بری؟"
+              id=""
+            />
+            <div class="searchBox-btn">
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="modal-search">
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+        <span class="back">بازگشت<i class="icon_leftarrow"></i></span>
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="main-wrapper">
+        <div class="room-information">
+          <div class="room-info-top">
+            <div class="room-images">
+              <div class="room-images-wrapper">
+                <div class="room-image-right">
+                  <div class="residence-details-option">
+                    <span class="residence_option_premium">
+                      <i
+                        ><img
+                          width="16px"
+                          height="16px"
+                          src="https://img.icons8.com/stickers/100/000000/christmas-star.png"
+                          alt="christmas-star"
+                      /></i>
+                      <p class="margin-0">مـمـتــــــاز</p>
+                    </span>
+                    <span class="residence_option_quickly">
+                      <i>
+                        <img
+                          width="16px"
+                          height="12px"
+                          src="https://img.icons8.com/small/96/flash-on.png"
+                          alt="flash-on"
+                        />
+                      </i>
+                      <p class="margin-0">رزرو فوری</p>
+                    </span>
+                  </div>
+                  <img src="/static/img/rooms/1.png" />
+                </div>
+                <div class="room-image-middle">
+                  <div class="room-image-middle-items">
+                    <img src="/static/img/rooms/2.png" alt="" />
+                  </div>
+                  <div class="room-image-middle-items padding-0">
+                    <img src="/static/img/rooms/3.png" alt="" />
+                  </div>
+                </div>
+                <div class="room-image-left">
+                  <div class="room-image-left-items">
+                    <img src="/static/img/rooms/4.png" alt="" />
+                  </div>
+                  <div class="room-image-left-items padding-0">
+                    <img src="/static/img/rooms/5.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="room-info-bottom">
+            <div class="room-info-bottom-right">
+              <div class="room-specifications">
+                <div class="room-specification-top">
+                  <div class="room-specification-image">
+                    <img src="" alt="avatar" class="owner-avatar" />
+                  </div>
+
+                  <div class="room-specification-top-context">
+                    <div class="room-specification-group">
+                      <ol class="room-specification-group-items">
+                        <li class="room-specification-group-item">
+                          <a href="/"><span itemprop="name">جاجیگا</span></a>
+                        </li>
+                        <i class="icon_arrow-head-left-rounded"></i>
+                        <li class="room-specification-group-item">
+                          <a href="/"
+                            ><span itemprop="name" id="state">مازندران</span></a
+                          >
+                        </li>
+                        <i class="icon_arrow-head-left-rounded"></i>
+                        <li class="room-specification-group-item active">
+                          <a href="/"
+                            ><span itemprop="name"
+                              ><strong id="city">سرخرود</strong></span
+                            ></a
+                          >
+                        </li>
+                      </ol>
+                    </div>
+
+                    <h1
+                      class="room-specification-title"
+                      title="اجاره ویلا دوبلکس استخردار در سرخرود"
+                    >
+                      اجاره ویلا دوبلکس استخردار در سرخرود
+                    </h1>
+
+                    <div class="room-specification-top-details">
+                      <div class="room-code">کد: <span>3177175</span></div>
+
+                      <div class="room-code room-owner-history">
+                        50+ رزرو موفق
+                      </div>
+
+                      <span class="room-rating rating">
+                        <span>
+                          <img
+                            width="12px"
+                            height="12px"
+                            src="https://img.icons8.com/fluency/96/filled-star.png"
+                            alt="filled-star"
+                          /><img
+                            width="12px"
+                            height="12px"
+                            src="https://img.icons8.com/fluency/96/filled-star.png"
+                            alt="filled-star"
+                          /><img
+                            width="12px"
+                            height="12px"
+                            src="https://img.icons8.com/fluency/96/filled-star.png"
+                            alt="filled-star"
+                          /><img
+                            width="12px"
+                            height="12px"
+                            src="https://img.icons8.com/fluency/96/filled-star.png"
+                            alt="filled-star"
+                          />
+                        </span>
+
+                        <span>4.7</span>
+
+                        <span>(43 نظر) </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="room-specification-general-details">
+                  <div class="room_general-detail-item">
+                    <i class="icon_semi-detached"></i>
+                    <div class="room_general-detail-item-text">نیمه دربست</div>
+                  </div>
+                  <div class="room_general-detail-item">
+                    <i class="icon_guests"></i>
+                    <div class="room_general-detail-item-text">تا 8 مهمان</div>
+                  </div>
+                  <div class="room_general-detail-item">
+                    <i class="icon_room"></i>
+                    <div class="room_general-detail-item-text">3 اتاق‌خواب</div>
+                  </div>
+                  <div class="room_general-detail-item">
+                    <i class="icon_meter"></i>
+                    <div class="room_general-detail-item-text">200 متر</div>
+                  </div>
+                </div>
+
+                <div class="room-specification-main">
+                  <div class="room_main-context">
+                    <h3 class="room_main-title" title="درباره اقامتگاه">
+                      درباره اقامتگاه
+                    </h3>
+
+                    <p class="room_main-context-p">
+                      <strong id="descTitle"
+                        >اجاره ویلا با استخر آبگرم داغ در رامسر</strong
+                      ><br />استخر روباز آبگرم این ویلا تجربه ای همانند آبگرم
+                      سرعین در قلب رامسر است با دستگاه تصفیه صنعتی که 24 ساعت در
+                      حال تصفیه میباشد.<br />این اقامتگاه علاوه بر رعایت کامل
+                      موارد بهداشتی که در حالت عادی انجام می‌شود، در این مدت
+                      تمام لوازم خانه از جمله لوازم آشپزخانه، سرویس خواب، سرویس
+                      بهداشتی، حمام و بقیه قسمت های خانه را به صورت کامل
+                      ضد‌عفونی خواهد کرد.<br />این ویلای استخردار ابگرم در محیطی
+                      پوشیده از گل و درخت در فاصله نزدیکی به دریا و بازارچه سنتی
+                      و بازار ماهی فروشان با دسترسی کامل به مراکز خرید، سوپر
+                      مارکت و داروخانه در شهر رامسر واقع شده است.<br />فاصله
+                      ویلا تا مرکز شهر 3 دقیقه با ماشین فاصله دو دقیقه ای به
+                      مرکز شهر ، جهت خرید مایحتاج روزانه و غیره... طی مسافت
+                      5دقیقه ای با اتومبیل به ساحل دریا رسیده و همچنین با طی
+                      مسافت 5 دقیقه ای از تله کابین رامسر لذت خواهید برد در حیاط
+                      یک استخر توپ کودک با سرسره ، ترامپولین ، تاب بازی ، و
+                      الاکلنگ و یه سری اسباب بازی برای سرگرمی کودکان دلبند شما و
+                      عزیزان ما فراهم شده تا اقامتی لذت بخش و شاد را برای کودکان
+                      شما فراهم اورد. همینطور فوتبالدستی، راکد تنیس و شطرنج و
+                      تخته نرد و البته یه فضای سنتی دبش و راحت ، مخصوص حال
+                      باصفای شما و طبیعت دل انگیز شمال، برای شما بزرگواران فراهم
+                      است. و صد البته برای جوج شمال، باربیکیو در گوشه حیاط قرار
+                      گرفته. ضمن خوش آمدگویی ، منتظر حضور گرم شما مهمانان گرامی
+                      هستیم.
+                    </p>
+                  </div>
+
+                  <div class="room_main-space room_main-context">
+                    <h3 class="room_main-title">فضای اقامتگاه</h3>
+
+                    <div class="room_main-space-details">
+                      <div>
+                        <strong>ظرفیت استاندارد:</strong><span>5 نفر</span>
+                      </div>
+                      <div>
+                        <strong>حداکثر ظرفیت:</strong><span>7 نفر</span>
+                      </div>
+                      <div>
+                        <strong>متراژ زیربنا:</strong><span>100 متر</span>
+                      </div>
+                      <div>
+                        <strong>متراژ محوطه:</strong><span>600 متر</span>
+                      </div>
+                      <div>
+                        <strong>نوع اقامتگاه:</strong><span>ویلایی</span>
+                      </div>
+                      <div><strong>منطقه:</strong><span>شهری</span></div>
+                    </div>
+                  </div>
+
+                  <div class="room_main-space-sleep room_main-context">
+                    <h3 class="room_main-title">فضای خواب</h3>
+
+                    <div class="room_main-space-sleep-boxs">
+                      <div class="room_main-space-sleep-box">
+                        <div class="room_sleep-box-icon">
+                          <i class="icon_bed-double"></i
+                          ><i class="icon_bed-mattress"></i>
+                        </div>
+                        <p class="room_sleep-box-title">اتاق 1</p>
+                        <p class="room_main-sleep-box-txt">1 تخت دونفره</p>
+                        <p class="room_main-sleep-box-txt">4 دست رختخواب</p>
+                      </div>
+
+                      <div class="room_main-space-sleep-box">
+                        <div class="room_sleep-box-icon">
+                          <i class="icon_bed-double"></i
+                          ><i class="icon_bed-mattress"></i>
+                        </div>
+                        <p class="room_sleep-box-title">اتاق 2</p>
+                        <p class="room_main-sleep-box-txt">1 تخت دونفره</p>
+                        <p class="room_main-sleep-box-txt">4 دست رختخواب</p>
+                      </div>
+
+                      <div class="room_main-space-sleep-box">
+                        <div class="room_sleep-box-icon">
+                          <i class="icon_bed-mattress"></i>
+                        </div>
+                        <p class="room_sleep-box-title">اتاق مشترک</p>
+                        <p class="room_main-sleep-box-txt">8 دست رختخواب</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="room_main-rules room_main-context">
+                    <h3 class="room_main-title">مقررات اقامتگاه</h3>
+
+                    <div class="room_main-rule-time">
+                      <div class="room_main-rule-time-items">
+                        <p class="room_main-rule-time-item1">
+                          <i class="icon_clock"></i>ساعت ورود از
+                        </p>
+                        <p class="room_main-rule-time-item2">2 ظهر تا 11 شب</p>
+                      </div>
+                      <div class="room_main-rule-time-items">
+                        <p class="room_main-rule-time-item1">
+                          <i class="icon_clock"></i>ساعت خروج تا
+                        </p>
+                        <p class="room_main-rule-time-item2">12 ظهر</p>
+                      </div>
+                    </div>
+
+                    <ul class="room_main-rule-items">
+                      <li class="room_main-rule-item">
+                        <i class="icon_dot"></i>
+
+                        <span><strong> مدارک مورد نیاز: </strong></span>
+
+                        <span>کارت ملی هوشمند یا شناسنامه </span>
+                      </li>
+                      <li class="room_main-rule-item">
+                        <i class="icon_dot"></i>
+
+                        <span
+                          >ورود حیوان خانگی (سگ، گربه، ...) به شرط رعایت کامل
+                          نظافت مجاز است. درفضای داخل ساختمان حیوان باید در باکس
+                          مخصوص نگهداری شود.</span
+                        >
+                      </li>
+                      <li class="room_main-rule-item">
+                        <i class="icon_dot"></i>
+                        <span
+                          >برگزاری جشن کوچک با هماهنگی میزبان امکانپذیر
+                          است</span
+                        >
+                      </li>
+                      <li class="room_main-rule-item">
+                        <i class="icon_dot"></i>
+
+                        <span
+                          >برگزاری مهمانی کوچک و پخش موزیک با هماهنگی قبلی با
+                          میزبان امکانپذیر می باشد و به جهت رعایت حال همسایگان
+                          پخش موزیک در محوطه بعد از ساعت 10 شب ممنوع می باشد.
+                        </span>
+                      </li>
+                      <li class="room_main-rule-item">
+                        <i class="icon_dot"></i>
+
+                        <span>ارائه کارت خودرو الزامی است. </span>
+                      </li>
+                      <li class="room_main-rule-item">
+                        <i class="icon_dot"></i>
+
+                        <span>به جمع های مجردی آقایان اجاره داده نمی شود.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="room_main-comments">
+                    <h3 class="room_main-title">
+                      نظر مهمانان
+                      <small>
+                        <small>(11 نظر)</small>
+                      </small>
+                    </h3>
+
+                    <div class="room_main-comments-wrapper">
+                      <div class="room_main-comment room_main-context">
+                        <div class="room_main-comment-info">
+                          <div class="room_comment-star">
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                          </div>
+
+                          <div>
+                            <div class="room_comment-user">
+                              <div>علی</div>
+                              <span>15 دی 1402</span>
+                            </div>
+                            <div class="room_comment-user-image">
+                              <img
+                                src="/static/img/rooms/avatar/comment-male.webp"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room_main-comment-txt">
+                          همه چیز عالی بود، وسایل تمیز و سالم و نو استخر تمیز با
+                          دمای خوب . به همه پیشنهاد میکنم. ممنون از میزبان محترم
+                        </div>
+                      </div>
+
+                      <div class="room_main-comment room_main-context">
+                        <div class="room_main-comment-info">
+                          <div class="room_comment-star">
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                          </div>
+
+                          <div>
+                            <div class="room_comment-user">
+                              <div>علی</div>
+                              <span>15 دی 1402</span>
+                            </div>
+                            <div class="room_comment-user-image">
+                              <img
+                                src="/static/img/rooms/avatar/comment-male.webp"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <p class="room_main-comment-txt">
+                          همه چیز عالی بود، وسایل تمیز و سالم و نو استخر تمیز با
+                          دمای خوب . به همه پیشنهاد میکنم. ممنون از میزبان محترم
+                        </p>
+                        <div class="room_main-owner-comment">
+                          <div
+                            class="room_main-comment-info room_main-owner-comment-info"
+                          >
+                            <div>
+                              <div class="room_comment-user">
+                                <div><small>اکبرر</small></div>
+                                <span>16 دی 1402</span>
+                              </div>
+                              <div class="room_comment-user-image">
+                                <img
+                                  src="/static/img/rooms/avatar/avatar.png"
+                                  class="owner-avatar"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <p class="room_main-owner-comment-txt">
+                            ممنونم از وقتی که گذاشتید، انجام وظیفه بود.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="room_main-comment room_main-context">
+                        <div class="room_main-comment-info">
+                          <div class="room_comment-star">
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                            <i class="star-small"></i>
+                          </div>
+
+                          <div>
+                            <div class="room_comment-user">
+                              <div>علی</div>
+                              <span>15 دی 1402</span>
+                            </div>
+                            <div class="room_comment-user-image">
+                              <img
+                                src="/static/img/rooms/avatar/comment-male.webp"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room_main-comment-txt">
+                          همه چیز عالی بود، وسایل تمیز و سالم و نو استخر تمیز با
+                          دمای خوب . به همه پیشنهاد میکنم. ممنون از میزبان محترم
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="room_main-owner-info">
+                    <div class="owner-info-top">
+                      <div class="owner_info">
+                        <h4 class="owner_info-name">اکبرر</h4>
+                        <p class="owner_info-member">
+                          عضو جاجیگا از 26 آذر 1401
+                        </p>
+                      </div>
+
+                      <div class="owner_info-image">
+                        <img src="" alt="" class="owner-avatar" />
+                      </div>
+                    </div>
+
+                    <p>
+                      <strong>درباره‌ میزبان: </strong>۳۶ ساله متاهل صادره از
+                      تهران ساکن کرج دیپلمه شغل آزاد
+                    </p>
+                    <p><strong>سرعت پاسخ‌گویی: </strong>کمتر از 11 دقیقه</p>
+                    <p><strong>میزان تأیید رزرو: </strong>101 درصد</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="room-info-bottom-left">
+              <div>
+                <div class="room-rate">
+                  <span>نرخ هر شب از:</span>
+
+                  <span class="room-rate-price"
+                    >2٬000٬000<small> تومان</small></span
+                  >
+                </div>
+                <div class="room-date-wrapper">
+                  <span class="room-form-title">تاریخ سفر</span>
+
+                  <div class="room-date">
+                    <div class="room-date-entry">
+                      <span>تاریخ ورود</span>
+                    </div>
+                    <span></span>
+                    <div class="room-date-leave">
+                      <span>تاریخ خروج</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="room-date-warm">داداش ، لطفا دوباره چک کن</p>
+                <div class="room-person-count">
+                  <span class="room-form-title"> تعداد نفرات </span>
+
+                  <label class="room-person-count-wrapper">
+                    <input
+                      oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                      type="text"
+                      placeholder="تعداد نفرات را مشخص کنید"
+                      class="room_count-input"
+                    />
+                    <div class="room_count-input-icon">
+                      <i class="icon_arrow-down"></i>
+                    </div>
+                  </label>
+                  <span class="room_count-text"
+                    >تا 1 کودک زیر 5 سال در صورتحساب لحاظ نمی گردد.</span
+                  >
+                </div>
+                <div class="room-btn-wrapper">
+                  <button class="room-submit-btn">
+                    <strong>ثبت درخواست رزرو <small> (رایگان) </small></strong>
+                  </button>
+
+                  <div class="room-form-option">
+                    <span class="room_option-wrapper"
+                      ><i class="icon_chat"></i>
+                      <p class="room_option-text">
+                        با امکان چت آنلاین با میزبان
+                      </p>
+                      <span
+                        ><svg
+                          class="sc-679cb2a8-0 iBzAsR"
+                          fill="currentColor"
+                          viewBox="0 0 32 32"
+                          preserveAspectRatio="xMidYMid meet"
+                        >
+                          <path
+                            fill="#6378f1"
+                            opacity="0.2"
+                            d="M30.667 16c0 8.1-6.567 14.667-14.667 14.667s-14.667-6.567-14.667-14.667 6.567-14.667 14.667-14.667 14.667 6.567 14.667 14.667z"
+                          ></path>
+                          <path
+                            fill="#6378f1"
+                            d="M16 29.333c-7.364 0-13.333-5.969-13.333-13.333s5.969-13.333 13.333-13.333c7.364 0 13.333 5.969 13.333 13.333s-5.969 13.333-13.333 13.333zM16 30.667c8.1 0 14.667-6.567 14.667-14.667s-6.567-14.667-14.667-14.667-14.667 6.567-14.667 14.667 6.567 14.667 14.667 14.667z"
+                          ></path>
+                          <path
+                            fill="#6378f1"
+                            d="M19.064 20.893c-0.007 0.003-0.507 0.3-0.976 0.401-0.26 0.056-0.376 0.025-0.413 0.009-0.189-0.080-0.541-0.227-0.245-1.38l0.555-2.16c0.329-1.284 0.172-2.421-0.444-3.204-0.504-0.64-1.277-0.987-2.176-0.977-0.324 0.004-0.645 0.040-0.957 0.109-1.152 0.266-2.129 0.895-2.829 1.757l-0.007 0.009c-0.058 0.081-0.093 0.182-0.093 0.291 0 0.277 0.224 0.501 0.501 0.501 0.093 0 0.181-0.026 0.256-0.070l-0.002 0.001c0.005-0.003 0.507-0.301 0.976-0.403 0.257-0.056 0.373-0.024 0.409-0.009 0.191 0.080 0.544 0.231 0.248 1.381l-0.555 2.161c-0.329 1.284-0.171 2.421 0.444 3.204 0.504 0.64 1.277 0.987 2.179 0.976 0.32-0.004 0.641-0.040 0.952-0.107 1.153-0.267 2.131-0.896 2.831-1.759l0.007-0.009c0.059-0.081 0.094-0.183 0.094-0.292 0-0.277-0.224-0.501-0.501-0.501-0.093 0-0.18 0.025-0.255 0.070l0.002-0.001zM16.331 12.252c1.135-0.252 1.97-1.25 1.97-2.443 0-1.381-1.119-2.5-2.5-2.5-0.188 0-0.371 0.021-0.547 0.060l0.017-0.003c-1.135 0.252-1.97 1.25-1.97 2.443 0 1.381 1.119 2.5 2.5 2.5 0.188 0 0.371-0.021 0.547-0.060l-0.017 0.003z"
+                          ></path></svg></span
+                    ></span>
+                  </div>
+
+                  <div class="room-guide-btns">
+                    <button class="room-guide-btn" type="button">
+                      <svg
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.0303 9.96967C15.3232 10.2626 15.3232 10.7374 15.0303 11.0303L12.0303 14.0303C11.7374 14.3232 11.2626 14.3232 10.9697 14.0303L9.46967 12.5303C9.17678 12.2374 9.17678 11.7626 9.46967 11.4697C9.76256 11.1768 10.2374 11.1768 10.5303 11.4697L11.5 12.4393L13.9697 9.96967C14.2626 9.67678 14.7374 9.67678 15.0303 9.96967Z"
+                          fill="#072FF0"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.1801 2.37506C11.714 2.20831 12.286 2.20831 12.8199 2.37506L12.5964 3.09042L12.8199 2.37506L19.3199 4.40529C20.4681 4.76394 21.25 5.82728 21.25 7.03023V10.7536C21.25 15.4969 18.3072 19.7424 13.8656 21.407C13.8656 21.407 13.8656 21.407 13.8656 21.407L13.8412 21.4161L13.8412 21.4161C12.6544 21.8609 11.3467 21.8613 10.1596 21.4173L10.1596 21.4173L10.1295 21.406C5.69141 19.746 2.75 15.5054 2.75 10.767V7.03017C2.75 5.82721 3.53188 4.76387 4.68014 4.40523L11.1801 2.37506ZM12.3727 3.80685C12.13 3.73105 11.87 3.73105 11.6273 3.80685L11.4039 3.09136L11.6273 3.80685L5.12734 5.83702L4.90374 5.12112L5.12734 5.83702C4.6054 6.00003 4.25 6.48337 4.25 7.03017V10.767C4.25 14.8797 6.80298 18.5603 10.655 20.0011L10.6551 20.0011L10.6851 20.0123C10.6851 20.0123 10.6851 20.0123 10.6851 20.0124C11.5331 20.3295 12.4671 20.3292 13.3148 20.0115C13.3148 20.0115 13.3148 20.0115 13.3148 20.0115L13.3391 20.0024L13.3392 20.0024C17.1952 18.5573 19.75 14.8715 19.75 10.7536V7.03023C19.75 6.48343 19.3946 6.0001 18.8727 5.83707L12.3727 3.80685Z"
+                          fill="#323232"
+                        ></path></svg
+                      >ضمانت تحویل</button
+                    ><button class="room-guide-btn" type="button">
+                      <svg
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet"
+                      >
+                        <path
+                          d="M14.1511 9.68482C13.9141 8.66326 12.9837 7.95496 11.9359 7.99844C10.7632 7.93349 9.75791 8.82709 9.68493 9.99928C9.68493 11.5038 11.8358 12.0001 11.8358 13.0005"
+                          stroke="#072FF0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M11.7104 15.7518C11.7105 15.8209 11.7665 15.8768 11.8355 15.8767C11.9046 15.8767 11.9605 15.8207 11.9605 15.7517C11.9606 15.6827 11.9047 15.6267 11.8356 15.6266C11.8024 15.6266 11.7706 15.6398 11.7471 15.6632C11.7236 15.6867 11.7104 15.7186 11.7104 15.7518"
+                          stroke="#072FF0"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.62861 17.1605C1.94551 13.3308 2.63502 8.08546 6.21672 5.07926C9.79842 2.07305 15.0839 2.30347 18.3903 5.60997C21.6968 8.91646 21.9273 14.2019 18.9211 17.7836C15.9149 21.3653 10.6695 22.0548 6.8398 19.3717L3.99688 20.0034L4.62861 17.1605Z"
+                          stroke="#323232"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path></svg
+                      >راهنمای رزرو
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-right">
+              <div class="footer_links">
+                <div class="footer_links-routings">
+                  <h3 class="footer_links-title">لینک های دسترسی</h3>
+                  <div class="footer-links-routing">
+                    <div class="footer_links-routing-wrapper">
+                      <a href="/" class="footer_routing-item"
+                        >چـگونـه مـهمـان شـوم</a
+                      ><a href="/" class="footer_routing-item"
+                        >قــوانــیــن و مــقــررات</a
+                      ><a href="/" class="footer_routing-item"
+                        >پــشــتــیــبــانــــی</a
+                      ><a href="/" class="footer_routing-item"
+                        >فــرصــت‌هــای شـغـلـی
+                      </a>
+                    </div>
+                    <div class="footer_links-routing-wrapper">
+                      <a href="/" class="footer_routing-item"
+                        >چـگونـه مـیزبان شـوم</a
+                      ><a href="/" class="footer_routing-item"
+                        >مــــقـــررات لـــغــو رزرو</a
+                      ><a href="/" class="footer_routing-item"
+                        >ثــــبــــت شــــکـــایــت</a
+                      ><a href="/" class="footer_routing-item"
+                        >راهــنــمــــای ســـایــت</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer_links-market">
+                  <h3 class="footer_links-title" title="نصب اپلیکیشن جاجیگا">
+                    نصب اپلیکیشن جاجیگا
+                  </h3>
+                  <div class="footer_markets-wrpper">
+                    <div class="footer_market-image">
+                      <a
+                        aria-label="bazaar"
+                        draggable="false"
+                        href="https://cafebazaar.ir/app/com.jajiga.app"
+                        ><div class="footer_market-link">
+                          <img
+                            draggable="false"
+                            alt="bazaar"
+                            loading="lazy"
+                            decoding="async"
+                            data-nimg="fill"
+                            class="sc-c2a81f3d-0 eUeuGv"
+                            style="
+                              position: absolute;
+                              height: 100%;
+                              width: 100%;
+                              left: 0;
+                              top: 0;
+                              right: 0;
+                              bottom: 0;
+                              color: transparent;
+                            "
+                            src="/static/img/markets/Bazzar.png"
+                          /></div
+                      ></a>
+                    </div>
+                    <div class="footer_market-image">
+                      <a
+                        aria-label="google-play"
+                        draggable="false"
+                        href="https://play.google.com/store/apps/details?id=com.jajiga.app"
+                        ><div class="footer_market-link">
+                          <img
+                            draggable="false"
+                            alt="google-play"
+                            loading="lazy"
+                            decoding="async"
+                            data-nimg="fill"
+                            class="sc-c2a81f3d-0 eUeuGv"
+                            style="
+                              position: absolute;
+                              height: 100%;
+                              width: 100%;
+                              left: 0;
+                              top: 0;
+                              right: 0;
+                              bottom: 0;
+                              color: transparent;
+                            "
+                            src="/static/img/markets/PlayStore.png"
+                          /></div
+                      ></a>
+                    </div>
+                    <div class="footer_market-image">
+                      <a
+                        aria-label="myket"
+                        draggable="false"
+                        href="https://myket.ir/app/com.jajiga.app"
+                        ><div class="footer_market-link">
+                          <img
+                            draggable="false"
+                            alt="myket"
+                            loading="lazy"
+                            decoding="async"
+                            data-nimg="fill"
+                            class="sc-c2a81f3d-0 eUeuGv"
+                            style="
+                              position: absolute;
+                              height: 100%;
+                              width: 100%;
+                              left: 0;
+                              top: 0;
+                              right: 0;
+                              bottom: 0;
+                              color: transparent;
+                            "
+                            src="/static/img/markets/Myket.png"
+                          /></div
+                      ></a>
+                    </div>
+                    <div class="footer_market-image">
+                      <div class="footer_market-link">
+                        <img
+                          decoding="async"
+                          data-nimg="fill"
+                          class="sc-c2a81f3d-0 eUeuGv"
+                          style="
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            color: transparent;
+                          "
+                          src="/static/img/markets/WebApp.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer_links-social">
+                  <h3 class="footer_links-title" title="با ما همراه شوید">
+                    با ما همراه شوید
+                  </h3>
+                  <div class="footer_social-wrapper">
+                    <a
+                      name="instagram"
+                      class="footer_social-item instagram"
+                      href="https://www.instagram.com/jajiga.iran"
+                      rel="noreferrer"
+                      target="_blank"
+                      ><i class="icon_instagram sc-7b1d8faa-0 dhtkZw"></i
+                      ><span class="sc-892304fe-1 jnREMN">700K</span></a
+                    ><a
+                      name="telegram"
+                      class="footer_social-item telegram"
+                      href="https://t.me/jajiga"
+                      rel="noreferrer"
+                      target="_blank"
+                      ><i class="icon_telegram sc-7b1d8faa-0 dhtkZw"></i
+                      ><span class="sc-892304fe-1 jnREMN">20K</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="footer_places">
+                <div cols="5" class="footer_place-wrapper">
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/shomal"
+                      >اجاره ویلا شمال</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/wooden-cottage"
+                      >اجاره کلبه چوبی</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/ramsar"
+                      >اجاره ویلا رامسر</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/pool"
+                      >اجاره ویلا استخردار</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/mashhad"
+                      >سوئیت مشهد</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/kordan"
+                      >اجاره ویلا کردان</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/masal"
+                      >اجاره ویلا ماسال</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/kish"
+                      >اجاره سوئیت در کیش</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/tehransuburb"
+                      >اجاره ویلا اطراف تهران
+                    </a>
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/istanbul"
+                      >اجاره سوئیت استانبول</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/savadkuh"
+                      >اجاره ویلا سوادکوه</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/qeshm"
+                      >سوئیت قشم</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/bandaranzali"
+                      >اجاره ویلا انزلی</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/chalus"
+                      >اجاره ویلا چالوس</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/tehran/suite"
+                      >اجاره سوئیت در تهران</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/shiraz"
+                      >اجاره سوئیت در شیراز</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/rasht"
+                      >اجاره ویلا رشت</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/filband"
+                      >اجاره ویلا در فیلبند</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/isfahan"
+                      >اجاره سوئیت در اصفهان</a
+                    >
+                  </div>
+                  <div class="footer_place-items">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/mahmudabad"
+                      >اجاره ویلا محمودآباد</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/shomal/pool"
+                      >ویلا استخردار شمال</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/ecolog"
+                      >رزرو اقامتگاه بوم گردی</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/villa"
+                      >اجاره ویلا</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/gilan"
+                      >اجاره ویلا گیلان</a
+                    >
+                  </div>
+                  <div class="footer_place-items last-row">
+                    <a
+                      class="footer_place-item"
+                      draggable="false"
+                      href="/s/shomal/beach"
+                      >اجاره ویلا ساحلی شمال</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-left">
+              <h3
+                class="footer-left-title"
+                title="با خیال راحت به جاجیگا اعتماد کنید"
+              >
+                با خیال راحت به جاجیگا اعتماد کنید
+              </h3>
+              <div class="footer-left-enamad">
+                <div class="footer_enamad-image">
+                  <div class="footer_enamad-img">
+                    <img
+                      draggable="false"
+                      alt="enamad"
+                      loading="lazy"
+                      decoding="async"
+                      data-nimg="fill"
+                      class="sc-c2a81f3d-0 eUeuGv"
+                      style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      "
+                      src="/static/img/footer/enamad.png"
+                    />
+                  </div>
+                </div>
+                <div class="footer_enamad-image">
+                  <div class="footer_enamad-img">
+                    <img
+                      draggable="false"
+                      alt="ecunion"
+                      loading="lazy"
+                      decoding="async"
+                      data-nimg="fill"
+                      class="sc-c2a81f3d-0 eUeuGv"
+                      style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      "
+                      src="/static/img/footer/ecunion.png"
+                    />
+                  </div>
+                </div>
+                <div class="footer_enamad-image">
+                  <span
+                    class="sc-b1c97945-0 bceJqj sc-d31da7dc-3 epXhon"
+                    tabindex="0"
+                    ><div class="footer_enamad-img">
+                      <img
+                        draggable="false"
+                        alt="mcth"
+                        loading="lazy"
+                        decoding="async"
+                        data-nimg="fill"
+                        class="sc-c2a81f3d-0 eUeuGv"
+                        style="
+                          position: absolute;
+                          height: 100%;
+                          width: 100%;
+                          left: 0;
+                          top: 0;
+                          right: 0;
+                          bottom: 0;
+                          color: transparent;
+                        "
+                        src="/static/img/footer/mcth.png"
+                      /></div
+                  ></span>
+                </div>
+                <div class="footer_enamad-image">
+                  <div class="footer_enamad-img">
+                    <img
+                      draggable="false"
+                      alt="iwfm"
+                      loading="lazy"
+                      decoding="async"
+                      data-nimg="fill"
+                      class="sc-c2a81f3d-0 eUeuGv"
+                      style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      "
+                      src="/static/img/footer/iwfm.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="copyRight">
+        کلیه حقوق این وبسایت متعلق به شرکت تجارت الکترونیک لوتوس آرمانی (سهامی
+        خاص) می‌باشد.
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modals"></div>
+    <!-- Date Picker -->
+    <div id="datePicker"></div>
+    <!-- Drawers -->
+    <div class="drawers">
+      <div class="drawers-bg-blur"></div>
+      <div class="drawers-wrapper">
+        <div class="drawers-close">
+          <button aria-label="close" class="drawers-close-btn" type="button">
+            <i class="drawers-close-icon" aria-label="close"></i>
+          </button>
+        </div>
+        <div class="aside-menu">
+          <div class="aside-menu-wrapper">
+            <div class="aside-menu-items">
+              <div class="aside-loginSignup-container">
+                <div class="aside-loginSignup">
+                  <div class="aside-loginSignup-icon">
+                    <a href="/">
+                      <svg
+                        class=""
+                        fill="#d6d6d6"
+                        viewBox="0 0 32 32"
+                        preserveAspectRatio="xMidYMid meet"
+                      >
+                        <defs>
+                          <clipPath id="clip-path">
+                            <polygon
+                              points="0 0 32 0 32 1.23 32 32 0 32 0 0"
+                              style="fill: none"
+                            ></polygon>
+                          </clipPath>
+                        </defs>
+                        <g style="clip-path: url('#clip-path')">
+                          <path
+                            d="M16,32A16,16,0,1,1,32,16,16,16,0,0,1,16,32ZM16,1.52A14.48,14.48,0,0,0,1.52,16a14.82,14.82,0,0,0,.28,2.82,14.48,14.48,0,0,0,28.4,0A15,15,0,0,0,30.48,16,14.5,14.5,0,0,0,16,1.52Z"
+                          ></path>
+                          <path
+                            d="M20.5,13.5A4.5,4.5,0,1,1,16,9,4.49,4.49,0,0,1,20.5,13.5ZM19,18.71a6,6,0,1,0-5.94,0A9.76,9.76,0,0,0,6.25,28a.75.75,0,0,0,1.5,0,8.25,8.25,0,0,1,15.87-3.16h0A8.18,8.18,0,0,1,24.25,28a.75.75,0,0,0,1.5,0A9.76,9.76,0,0,0,19,18.71Z"
+                            style="fill-rule: evenodd"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="">
+                    <button
+                      class="aside-loginSignup-btn login-signUp"
+                      type="button"
+                    >
+                      ورود / ثبت‌نام
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr class="aside-menu-hr" />
+              <div class="aside_item active">
+                <a theme="[object Object]" class="aside_item-txt" href="/"
+                  ><i class="icon_homes aside_item-icon"></i>صفحه اصلی</a
+                >
+              </div>
+              <div class="aside_item">
+                <a theme="[object Object]" class="aside_item-txt" href="/wishes"
+                  ><i class="icon_favorite aside_item-icon"></i>
+                  <div class="sc-de3ce021-0 JUsap">علاقه‌مندی‌ها</div></a
+                >
+              </div>
+              <div class="aside_item">
+                <div class="sc-de3ce021-0 fAbrgU">
+                  <a theme="[object Object]" class="aside_item-txt" href="/host"
+                    ><i class="icon_home-add aside_item-icon"></i>میزبان شو</a
+                  >
+                </div>
+              </div>
+              <div class="aside_item">
+                <a
+                  theme="[object Object]"
+                  class="aside_item-txt"
+                  href="/support"
+                  ><i class="icon_support aside_item-icon"></i>
+                  <div class="sc-de3ce021-0 JUsap">پشتیبانی</div></a
+                >
+              </div>
+              <div class="aside_item">
+                <a theme="[object Object]" class="aside_item-txt" href="/faq"
+                  ><i class="icon_faq aside_item-icon"></i>سوالات متداول</a
+                >
+              </div>
+              <div class="aside_item">
+                <a theme="[object Object]" class="aside_item-txt" href="/help"
+                  ><i class="icon_help aside_item-icon"></i>راهنما</a
+                >
+              </div>
+              <div class="aside_item">
+                <a
+                  theme="[object Object]"
+                  class="aside_item-txt"
+                  href="/guarantee"
+                  ><i class="icon_guarantee aside_item-icon"></i>ضمانت تحویل</a
+                >
+              </div>
+              <div class="aside_item">
+                <a theme="[object Object]" class="aside_item-txt" href="/rules"
+                  ><i class="icon_rules aside_item-icon"></i>قوانین وبسایت</a
+                >
+              </div>
+              <hr class="aside-menu-hr aside-menu-hr2" />
+              <div class="aside_item">
+                <a theme="[object Object]" class="aside_item-txt" href="/invite"
+                  ><i class="icon_gift aside_item-icon"></i>
+                  <div class="sc-de3ce021-0 JUsap">دعوت از دوستان</div></a
+                >
+              </div>
+              <div class="aside_item">
+                <a theme="[object Object]" class="aside_item-txt" href="/app"
+                  ><i class="icon_install-app aside_item-icon"></i>نصب جاجیگا</a
+                >
+              </div>
+              <div class="aside_item">
+                <a theme="[object Object]" class="aside_item-txt" href="/jobs"
+                  ><i class="icon_jobs aside_item-icon"></i>فرصت‌های شغلی</a
+                >
+              </div>
+              <div class="aside_item">
+                <a theme="[object Object]" class="aside_item-txt" href="/about"
+                  ><i class="icon_info aside_item-icon"></i>درباره ما</a
+                >
+              </div>
+            </div>
+            <div class="aside-menu-bottom">
+              <p class="web-version">0.131.24</p>
+              <div class="aside_bottom-socials">
+                <a
+                  class="aside_bottom-social"
+                  href="https://t.me/jajiga"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="icon_telegram aside_bottom-social-icon"
+                    aria-label="telegram"
+                  ></i></a
+                ><a
+                  class="aside_bottom-social"
+                  href="https://www.instagram.com/jajiga.iran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="icon_instagram-nav aside_bottom-social-icon"
+                    aria-label="instagram-nav"
+                  ></i></a
+                ><a
+                  class="aside_bottom-social"
+                  href="https://twitter.com/jajiga_iran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="icon_twitter aside_bottom-social-icon"
+                    aria-label="twitter"
+                  ></i></a
+                ><a
+                  class="aside_bottom-social"
+                  href="https://www.aparat.com/jajiga"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i
+                    class="icon_youtube aside_bottom-social-icon"
+                    aria-label="youtube"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Loading  -->
+    <div class="loading">
+      <video
+        loading="lazy"
+        muted="muted"
+        src="./static/img/loading/car-on-the-road-4851957-4042273.mp4"
+        type="video/mp4"
+        autoplay="autoplay"
+        loop="loop"
+      ></video>
+    </div>
+
+    <script src="static/js/persian-date.js" type="text/javascript"></script>
+    <script type="module" src="static/js/drawers.js"></script>
+    <script type="module" src="static/js/modals.js"></script>
+    <script type="module" src="static/js/room.js"></script>
+  </body>
+</html>

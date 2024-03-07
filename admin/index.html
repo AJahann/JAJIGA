@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/shop.css" />
+    <title>Dashboard Admin</title>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar close">
+      <a href="/index.html" class="logo">
+        <i class="bx bx-code-alt"></i>
+        <div class="logo-name"><span>Jaji</span>Ga</div>
+      </a>
+      <ul class="side-menu">
+        <li class="active">
+          <a name="dashboard" href="#"
+            ><i class="bx bxs-dashboard"></i>داشبورد</a
+          >
+        </li>
+        <li>
+          <a name="residences" href="#"
+            ><i class="bx bx-store-alt"></i>اقامتگاه ها</a
+          >
+        </li>
+        <li>
+          <a name="analyse" href="#"><i class="bx bx-analyse"></i>آنالیز</a>
+        </li>
+        <li>
+          <a name="tickets" href="#"
+            ><i class="bx bx-message-square-dots"></i>تیکت ها</a
+          >
+        </li>
+        <li>
+          <a name="users" href="#"><i class="bx bx-group"></i>کاربران</a>
+        </li>
+        <li>
+          <a name="setting" href="#"><i class="bx bx-cog"></i>تنظیمات</a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="/index.html" class="logout">
+            <i class="bx bx-log-out-circle">
+            </i>
+            خروج
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Navbar -->
+      <nav>
+        <i class="bx bx-menu"></i>
+        <form class="search-form" action="#">
+          <!-- <div style="display: none" class="form-input">
+            <input type="search" placeholder="جستجو" />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div> -->
+        </form>
+        <input type="checkbox" id="theme-toggle" hidden />
+        <label for="theme-toggle" class="theme-toggle"></label>
+        <a href="#" class="notif">
+          <i class="bx bx-bell"></i>
+          <span class="count">12</span>
+        </a>
+        <a href="#" class="profile">
+          <img src="/favicon.ico" />
+        </a>
+      </nav>
+
+      <!-- End of Navbar -->
+
+      <main>
+        <div class="container"></div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="js/swiper.js"></script>
+    <script type="module" src="js/style.js"></script>
+    <script type="module" src="js/residence.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
