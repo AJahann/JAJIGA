@@ -458,6 +458,11 @@ function userState(users, phoneNumber, cookie) {
       user = use;
     }
   });
+  if (cookie && !userExists) {
+    console.log('user not exist');
+    document.cookie = `user=0; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+    return;
+  }
   if (userExists && cookie) {
     loginSuccessful(user);
   } else if (userExists) {
