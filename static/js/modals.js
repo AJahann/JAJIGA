@@ -440,9 +440,8 @@ function post(name, family, phoneNumber, password) {
   })
     .then((res) => {
       if (res.status == 201) {
-        loginSuccessful(userInformation);
         setCookie('user', phoneNumber, 7);
-        body.classList.remove('hide-scroll');
+        getData(phoneNumber, true);
       }
     })
     .catch((err) => {
