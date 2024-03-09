@@ -155,7 +155,7 @@ function residenceSliderPremium(data) {
       <div class="residence-top">
         <div class="residence-image">
           <img
-            src="static/img/public/residence.jpg"
+            src="${item.src}1.webp"
             alt="Photo"
             class="residece_img"
           />
@@ -244,8 +244,8 @@ function residenceSliderSpecial(data) {
       <div class="residence-top">
         <div class="residence-image">
           <img
-            src="static/img/public/residence.jpg"
-            alt="Photo"
+          src="${item.src}1.webp"
+          alt="Photo"
             class="residece_img"
           />
         </div>
@@ -333,8 +333,8 @@ function residenceSliderQuickly(data) {
       <div class="residence-top">
         <div class="residence-image">
           <img
-            src="static/img/public/residence.jpg"
-            alt="Photo"
+          src="${item.src}1.webp"
+          alt="Photo"
             class="residece_img"
           />
         </div>
@@ -427,7 +427,7 @@ function residenceSliderLuxury(data) {
       <div class="residence-top">
         <div class="residence-image">
           <img
-            src="static/img/public/residence.jpg"
+            src="${item.src}1.webp"
             alt="Photo"
             class="residece_img"
           />
@@ -516,7 +516,7 @@ function residenceSliderEconomic(data) {
       <div class="residence-top">
         <div class="residence-image">
           <img
-            src="static/img/public/residence.jpg"
+            src="${item.src}1.webp"
             alt="Photo"
             class="residece_img"
           />
@@ -605,7 +605,7 @@ function residenceSliderTehran(data) {
       <div class="residence-top">
         <div class="residence-image">
           <img
-            src="static/img/public/residence.jpg"
+            src="${item.src}1.webp"
             alt="Photo"
             class="residece_img"
           />
@@ -695,7 +695,7 @@ function residenceSliderShomal(data) {
       <div class="residence-top">
         <div class="residence-image">
           <img
-            src="static/img/public/residence.jpg"
+            src="${item.src}1.webp"
             alt="Photo"
             class="residece_img"
           />
@@ -813,7 +813,7 @@ function residenceDiscount(data, state) {
     <div class="residence-top">
       <div class="residence-image">
         <img
-          src="static/img/public/residence.jpg"
+        src="${item.src}1.webp"
           alt="Photo"
           class="residece_img"
         />

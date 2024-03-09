@@ -19,6 +19,7 @@ const loading = $.querySelector('.loading');
 const searchInput = $.querySelectorAll('.searchBox-input');
 const dateEntryElem = $.querySelector('.room-date-entry');
 const dateLeaveElem = $.querySelector('.room-date-leave');
+const imgs = $.querySelectorAll('.img');
 const back = $.querySelector('.back');
 
 const residencesKey = {
@@ -41,9 +42,10 @@ let userAction = {};
 let dataSearch = [];
 
 function setValus(data) {
-  let randomNumberImg = randomNumGenerator();
+  setImages(data);
+  let randomNumberAvatar = randomNumGenerator();
   Array.from(ownerAvatar).forEach((e) => {
-    e.src = `https://i.pravatar.cc/150?img=${randomNumberImg}`;
+    e.src = `https://i.pravatar.cc/150?img=${randomNumberAvatar}`;
   });
 
   data.options.premium ||
@@ -235,6 +237,13 @@ function setEvents(data) {
 }
 function randomNumGenerator() {
   return Math.floor(Math.random() * 40);
+}
+function setImages(item) {
+  let i = 1;
+  Array.from(imgs).forEach((elem) => {
+    elem.src = `${item.src}${i}.webp`;
+    i++;
+  });
 }
 
 function searchByCity(query) {

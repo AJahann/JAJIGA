@@ -46,7 +46,7 @@ function addResidence(data) {
         }" class="residence-slide">
       <div class="residence-top">
         <div class="residence-image">
-          <img src="static/img/public/residence.jpg" alt="Photo" class="residece_img">
+          <img src="${residence.src}1.webp" alt="Photo" class="residece_img">
         </div>
         <div class="residence_details">
           <div class="residence-details-option">
