@@ -22,9 +22,7 @@ function closeMenu() {
 function changeAside(user) {
   const asideLoginSignup = $.querySelector('.aside-loginSignup-container');
   const lastNavItem = $.querySelector('.nav-menu_items .nav_item:last-child');
-
   modalsContainer.innerHTML = ``;
-
   asideLoginSignup.innerHTML = `<div class="aside-loginSignup-container">
     <div class="aside-loginSignup">
       <div class="aside-loginSignup-icon">
@@ -70,6 +68,8 @@ function changeAside(user) {
   });
 
   lastNavItem.innerHTML = `<a class="nav_item" href="/">اعلانات</a>`;
+
+  addLeaveBtn();
 }
 function loginSuccessful(user) {
   removeLoading();
@@ -90,6 +90,15 @@ async function getUsersData(id) {
     .catch((err) => {
       console.log('Error: ' + err);
     });
+}
+function addLeaveBtn() {
+  const btn = $.querySelector('#addLeaveBtn');
+  btn.innerHTML =
+    '<i class="icon_info aside_item-icon"></i>خروج';
+  btn.addEventListener('click', (e) => {
+    document.cookie = `user=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+    location.reload();
+  });
 }
 
 export { closeMenu, loginSuccessful, isLogin, getUsersData };
