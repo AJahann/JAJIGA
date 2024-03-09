@@ -386,6 +386,7 @@ function addResidencePageTemplate(data, id, stateValue) {
   let estakhr = false;
   let special = false;
   let addResidenceInfo = $.querySelector('.add-residence-btn');
+  let src = Math.floor(Math.random() * 5) + 1;
 
   data.forEach((item) => {
     if (item.id == id) {
@@ -438,6 +439,7 @@ function addResidencePageTemplate(data, id, stateValue) {
       estakhr,
       special,
       dataResidence,
+      src
     };
 
     dataResidence.actions.push(dataObjectResidence(obj));

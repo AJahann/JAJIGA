@@ -24,7 +24,7 @@ export function dataObjectResidence(params) {
     countRooms: params.countRooms.value,
     price: params.price.value,
     discount: params.discount.value,
-    srcImg: '1',
+    src: `./static/img/public/${params.src}/`,
     state: params.state.value,
     city: params.city.value,
     date: '',
