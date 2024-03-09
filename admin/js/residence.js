@@ -99,7 +99,7 @@ function residenceTemplate(data, state) {
         <div class="residence-top">
           <div class="residence-image">
             <img
-              src="../static/img/public/residence.jpg"
+              src=".${item.src}1.webp"
               alt="Photo"
               class="residece_img"
             />
@@ -439,7 +439,7 @@ function addResidencePageTemplate(data, id, stateValue) {
       estakhr,
       special,
       dataResidence,
-      src
+      src,
     };
 
     dataResidence.actions.push(dataObjectResidence(obj));
